@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
 import ThemeSwitch from "./ThemeSwitch";
-import { CiLight } from "react-icons/ci";
-import { CiDark } from "react-icons/ci";
 
 export default function Header() {
 
 
   return (
-    <header id="home" className="sticky w-full items-center flex left-0 top-0 shadow-md bg-bkgEnd/50 backdrop-blur-md">
-      <div className="container mx-auto flex justify-between items-center h-24">
+    <header className="sticky w-full items-center flex left-0 top-0 z-50 shadow-md bg-bkgEnd/80 backdrop-blur-lg">
+      <div className="container mx-auto p-4 flex justify-between items-center h-16">
         <a href="/" className="p-1.5">
-          <span className="subtitle">Aimé<br /> Olivier</span>
+          <span className="subtitle">Aimé Olivier</span>
         </a>
         <div className="cursor-pointer">
-          <ThemeSwitch />
+          <ThemeSwitch className="text-secondary" />
         </div>
       </div>
     </header>

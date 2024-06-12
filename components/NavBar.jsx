@@ -5,42 +5,58 @@ import { IoBriefcaseOutline } from "react-icons/io5";
 import { BsListTask } from "react-icons/bs";
 import { GrContact } from "react-icons/gr";
 import { FaCode } from "react-icons/fa6";
+import { RiFolder2Line } from "react-icons/ri";
 
 
-export default function NavBar(){
+export default function NavBar() {
 
   const [activeSection, setActiveSection] = useState("#home");
 
-  const handleSetActive = (section) => {
-    setActiveSection(section);
+  const handleSetActive = (event) => {
+    event.preventDefault();
+    const targetSection = event.currentTarget.getAttribute('href').substring(1);
+    const element = document.getElementById(targetSection);
+
+    if (element) {
+      const headerOffset = 64;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
+      setActiveSection(`#${targetSection}`);
+    }
   };
 
   return (
-    <nav className="fixed w-80 mx-auto inset-x-0 bottom-10 z-50 rounded-2xl p-4 bg-bkgEnd/50 backdrop-blur-md shadow-xl">
+    <nav className="fixed w-80 mx-auto inset-x-0 bottom-5 z-50 rounded-2xl p-2.5 bg-bkgEnd/80 backdrop-blur-lg shadow-xl">
       <ul className="flex justify-between">
         <li className={`rounded-xl cursor-pointer ${activeSection === "#home" ? "bg-bkgStart text-accent" : ""}`}>
-          <a href="#home" onClick={() => handleSetActive("#home")}>
-          <RiHome6Line className='w-10 h-10 p-2' />
+          <a href="#home" onClick={(e) => { handleSetActive(e)}}>
+            <RiHome6Line className='w-8 h-8 p-2' />
           </a>
         </li>
         <li className={`rounded-xl cursor-pointer ${activeSection === "#skills" ? "bg-bkgStart text-accent" : ""}`}>
-          <a href="#skills" onClick={() => handleSetActive("#skills")}>
-          <RiToolsLine className='w-10 h-10 p-2' />
+          <a href="#skills" onClick={(e) => { handleSetActive(e) }}>
+            <RiToolsLine className='w-8 h-8 p-2' />
           </a>
         </li>
         <li className={`rounded-xl cursor-pointer ${activeSection === "#resume" ? "bg-bkgStart text-accent" : ""}`}>
-          <a href="#resume" onClick={() => handleSetActive("#resume")}>
-          <IoBriefcaseOutline className='w-10 h-10 p-2' />
+          <a href="#resume" onClick={(e) => { handleSetActive(e) }}>
+            <IoBriefcaseOutline className='w-8 h-8 p-2' />
           </a>
         </li>
         <li className={`rounded-xl cursor-pointer ${activeSection === "#projects" ? "bg-bkgStart text-accent" : ""}`}>
-          <a href="#projects" onClick={() => handleSetActive("#projects")}>
-          <BsListTask className='w-10 h-10 p-2' />
+          <a href="#projects" onClick={(e) => { handleSetActive(e) }}>
+            <RiFolder2Line className='w-8 h-8 p-2' />
           </a>
         </li>
-        <li  className={`rounded-xl cursor-pointer ${activeSection === "#contact" ? "bg-bkgStart text-accent" : ""}`}>
-          <a href="#contact" onClick={() => handleSetActive("#contact")}>
-          <GrContact className='w-10 h-10 p-2' />
+        <li className={`rounded-xl cursor-pointer ${activeSection === "#contact" ? "bg-bkgStart text-accent" : ""}`}>
+          <a href="#contact" onClick={(e) => {  handleSetActive(e) }}>
+            <GrContact className='w-8 h-8 p-2' />
           </a>
         </li>
       </ul>

@@ -3,6 +3,7 @@ export const resumeData = [
     title: "Développeur web",
     company: "HD Communication",
     date: "2022 - 2024",
+    location: "Lille, France",
     description: [
       "Développement des sites et applications web.",
       "Collaborer avec des équipes interfonctionnelles pour recueillir les exigences.",
@@ -20,6 +21,7 @@ export const resumeData = [
     title: "Développeur web",
     company: "D3COD",
     date: "2021",
+    location: "Lille, France",
     description: [
       "Développement des sites web et maintenance.",
       "Déploiement et mise en ligne, gestion des hébergements.",
@@ -33,6 +35,7 @@ export const resumeData = [
     title: "Licence Informatique",
     company: "Université de Lille",
     date: "2020",
+    location: "Lille, France",
     description: [""],
     isActive: true,
     type: "education",
@@ -41,6 +44,7 @@ export const resumeData = [
     title: "Développeur web",
     company: "LeComparateurAssurance.com",
     date: "2019",
+    location: "Lille, France",
     description: [
       "Analyse du besoin et correction des anomalies.",
       "Mise en place de bases de données.",
@@ -53,6 +57,7 @@ export const resumeData = [
     title: "Licence d'éducation Informatique",
     company: "Université du Rwanda",
     date: "2015",
+    location: "Kigali, Rwanda",
     description: [""],
     isActive: true,
     type: "education",
@@ -61,6 +66,7 @@ export const resumeData = [
     title: "Enseignant (Réseaux et Web)",
     company: "Lycée de Kicukiro, APADE",
     date: "2014 - 2015",
+    location: "Kigali, Rwanda",
     description: [
       "Préparation du cours et support.",
       "Préparation des exercices.",
@@ -74,6 +80,7 @@ export const resumeData = [
     title: "Technicien support informatique",
     company: "We Actx For Hope",
     date: "2013 - 2017",
+    location: "Kigali, Rwanda",
     description: [
       "Mise à jour des applications.",
       "Maintenance informatique."

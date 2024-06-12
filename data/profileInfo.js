@@ -1,6 +1,6 @@
 
 export const profileInfo = {
-  name: 'NGABONZIZA Aimé Olivier',
+  name: 'Aimé Olivier Ngabonziza',
   title: 'FullStack Web Developer',
   imageSrc: '/img/profile-dot.png',
 
