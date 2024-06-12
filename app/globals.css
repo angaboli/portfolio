@@ -2,32 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --primary: 15, 23, 42;
+    --secondary: 96, 167, 226;
+    --accent: 151, 187, 243;
+    --neutral: 250, 250, 250;
+    --bkg-start: 240, 240, 235;
+    --bkg-end: 209, 218, 219;
+  }
+
+  .dark {
+    --primary: 250, 250, 250;
+    --secondary: 96, 167, 226;
+    --accent: 151, 187, 243;
+    --neutral: 2, 6, 23;
+    --bkg-start: 15, 23, 42;
+    --bkg-end: 51, 65, 85;
   }
 }
 
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--primary));
+  background: linear-gradient(135deg, rgb(var(--bkg-start)), rgb(var(--bkg-end)));
+  font-size: 14px;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.title{
+  @apply font-medium text-2xl mb-2;
+}
+
+.subtitle{
+  @apply font-medium text-lg text-secondary mb-1;
+}
+
+.small{
+  @apply font-light text-sm
+}
+
+.container{
+  width: 80%;
+  max-width: 1366px;
+  margin: 0 auto;
 }
