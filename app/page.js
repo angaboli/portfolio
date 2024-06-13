@@ -7,11 +7,16 @@ import Skills from "@/components/Skills";
 import Resume from "@/components/Resume";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import { motion, useScroll } from "framer-motion"
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
+
+  console.log(scrollYProgress)
   return (
     <main className="">
       <Header />
+      <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
       <NavBar />
       <PersonalInfo />
       <Skills />

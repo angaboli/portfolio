@@ -17,9 +17,9 @@ export default function Projects() {
             </div>
           </div>
           <div className="w-full">
-            <div className="flex flex-wrap justify-center gap-5 -m-4">
+            <div className="flex flex-wrap justify-center -m-4">
               {portfolioData.map((elm, i) => (
-                <a href={elm.previewLink} target="_blank" className="w-full md:w-1/2 lg:w-1/3 ">
+                <a key={i} href={elm.previewLink} target="_blank" className="w-full md:w-1/2 p-4 lg:w-1/3 ">
                   <div className="flex relative">
                     <Image
                       width={310}
@@ -33,7 +33,7 @@ export default function Projects() {
                       <p className="leading-relaxed text-neutral h-24 min-h-24 overflow-y-scroll mb-3">{elm.desc}</p>
                       <div className="flex flex-wrap gap-1 h-12 min-h-12">
                         {elm.languages.map((lang, i) => (
-                          <div className="bg-secondary text-xs h-6 text-primary p-1 font-medium rounded-md ">
+                          <div key={i} className="bg-secondary text-xs h-6 text-primary p-1 font-medium rounded-md ">
                             {lang}
                           </div>
                         ))}
