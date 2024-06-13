@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FiSend } from "react-icons/fi";
 
 export default function ContactForm() {
   const [activeInputBoxes, setActiveInputBoxes] = useState([])
@@ -23,10 +24,10 @@ export default function ContactForm() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
+        "service_qp721kj",
+        "template_o92fcoc",
         form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        //"user_vYmDSd9PwIuRXUQEDjYwN"
       )
       .then(
         (result) => {
@@ -40,7 +41,7 @@ export default function ContactForm() {
             draggable: true,
             progress: undefined,
           });
-          document.getElementById("myFormOne").reset();
+          document.getElementById("contactForm").reset();
         },
         (error) => {
           toast.error("Ops Message not Sent!", {
@@ -63,7 +64,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="contact-form" ref={form} onSubmit={sendEmail}>
+    <form id="contactForm" className="contact-form" ref={form} onSubmit={sendEmail}>
       <div className="form-input-item mb-4">
         <label
           className={`input-label block mb-2 ${activeInputBoxes.includes('name') ? 'text-secondary' : ''}`}
@@ -103,16 +104,17 @@ export default function ContactForm() {
           className={`input-box border rounded w-full p-2 ${activeInputBoxes.includes('message') ? 'border-accent' : ''}`}
           onClick={() => handleClick('message')}
           cols="30"
-          rows="10"
+          rows="8"
         ></textarea>
       </div>
       <div className="form-btn-wrap">
         <button
           type="submit"
           value="Send"
-          className="form-btn bg-neutral text-primary shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out py-2 px-4 rounded-xl"
+          className="form-btn bg-neutral flex gap-2 items-center  text-primary border-1 border-accent shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out py-2 px-4 rounded-xl transition duration-200 transform hover:-translate-y-1 active:translate-y-0"
         >
           Submit
+          <FiSend className="" />
         </button>
       </div>
     </form>

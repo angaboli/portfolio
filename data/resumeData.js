@@ -42,7 +42,7 @@ export const resumeData = [
   },
   {
     title: "Développeur web",
-    company: "LeComparateurAssurance.com",
+    company: "Le Comparateur d'Assurance",
     date: "2019",
     location: "Lille, France",
     description: [

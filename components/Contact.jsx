@@ -15,19 +15,19 @@ export default function Contact() {
   return (
     <>
       <div id="contact" className="">
-        <div className="container bg-bkgStart rounded-2xl shadow-md">
-          <div className="section-wrapper p-15 md:px-20 md:pt-10 lg:px-30 lg:pt-15 xl:pl-60 xl:pr-60 xl:pt-60">
-            <div className=" mb-4 text-center">
-              <h2 className="title">Contact</h2>
+        <div className="container bg-bkgStart rounded-2xl  shadow-md">
+          <div className="flex flex-wrap pt-16">
+            <div className="w-1/2 mx-auto">
+              <div className="mb-10 text-center">
+                <h2 className="title">Contact</h2>
+              </div>
             </div>
           </div>
-
-          <div className="section-wrapper px-4 md:px-10 lg:px-20 xl:px-60 md:mb-20 lg:mb-40 xl:mb-60">
-            <div className=" p-6">
+          <div className="mb-20 w-2/3 pb-16 mx-auto">
+            <div className="">
               <ContactForm />
             </div>
           </div>
-
         </div>
         <div className="footer-copyright bg-bkgStart text-center pb-20 pt-6">
           <div className="text-xs text-light">

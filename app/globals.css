@@ -33,27 +33,49 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
-.title{
+.title {
   @apply font-medium text-2xl mb-2 drop-shadow-lg;
 }
 
-.subtitle{
+.subtitle {
   @apply font-medium text-lg text-secondary mb-1;
 }
 
-.small{
+.small {
   @apply font-light text-sm
 }
 
-.container{
+.container {
   width: 80%;
   max-width: 1366px;
   margin: 0 auto;
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent
