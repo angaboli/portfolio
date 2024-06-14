@@ -57,30 +57,40 @@ export const skillsData = [
   {
     id: 12,
     icon: '',
-    label: "WooCommerce",
+    label: "POO",
   },
   {
     id: 13,
     icon: '',
-    label: "Drupal",
+    label: "MVC",
   },
   {
     id: 14,
     icon: '',
-    label: "Linux",
-  },
-  {
-    id: 14,
-    icon: '',
-    label: "MySQL",
+    label: "WooCommerce",
   },
   {
     id: 15,
     icon: '',
-    label: "Docker",
+    label: "Drupal",
   },
   {
     id: 16,
+    icon: '',
+    label: "Linux",
+  },
+  {
+    id: 17,
+    icon: '',
+    label: "MySQL",
+  },
+  {
+    id: 18,
+    icon: '',
+    label: "Docker",
+  },
+  {
+    id: 19,
     icon: '',
     label: "Adobe(Ps, Ai, Lr, xD)",
   },
