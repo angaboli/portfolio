@@ -24,10 +24,10 @@ export default function ContactForm() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_qp721kj",
+        "service_ecafwhm",
         "template_o92fcoc",
         form.current,
-        //"user_vYmDSd9PwIuRXUQEDjYwN"
+        "TXb_tueFmBsYU3b8Z"
       )
       .then(
         (result) => {
@@ -72,7 +72,7 @@ export default function ContactForm() {
           Name *
         </label>
         <input
-          name="name"
+          name="user_name"
           className={`input-box border rounded w-full p-2 ${activeInputBoxes.includes('name') ? 'border-accent' : ''}`}
           type="text"
           required
@@ -86,7 +86,7 @@ export default function ContactForm() {
           Email *
         </label>
         <input
-          name="email"
+          name="user_email"
           className={`input-box border rounded w-full p-2 ${activeInputBoxes.includes('gmail') ? 'border-accent' : ''}`}
           type="email"
           required

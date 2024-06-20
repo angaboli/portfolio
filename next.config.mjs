@@ -5,11 +5,9 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'dummyimage.com',
-        //port: '8082',
       },
     ],
-  }
+  },
 }
-
 
 export default nextConfig;

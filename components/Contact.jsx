@@ -19,7 +19,7 @@ export default function Contact() {
           <div className="flex flex-wrap pt-16">
             <div className="w-1/2 mx-auto">
               <div className="mb-10 text-center">
-                <h2 className="title">Contact</h2>
+                <h2 className="title">Join me</h2>
               </div>
             </div>
           </div>

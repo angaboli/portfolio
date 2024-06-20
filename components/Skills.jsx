@@ -20,7 +20,7 @@ export default function Skills() {
         </div>
         <div className="flex flex-wrap gap-5 justify-center">
           {skillsData.map((elm, i) => (
-            <div key={i} className='bg-accent/30 text-secondary p-2.5 font-medium ease-in-out rounded-md text-center cursor-pointer hover:scale-125'>
+            <div key={i} className='bg-accent/30 text-secondary p-2.5 font-medium ease-in-out duration-500 rounded-md text-center cursor-pointer hover:scale-125'>
               <span className="">{elm.label}</span>
             </div>
           ))}

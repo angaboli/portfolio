@@ -28,7 +28,7 @@ export default function Projects() {
                       src={elm.imgSrc}
                       alt="portfolio"
                     />
-                    <div className="px-6 py-8 relative z-10 w-full border-4 border-accent bg-accent text-neutral opacity-0 hover:opacity-100 rounded-md">
+                    <div className="px-6 py-8 relative z-10 w-full border-4 border-accent bg-accent text-neutral opacity-0 hover:opacity-100 rounded-md ease-in duration-500">
                       <h4 className="tracking-widest title-font font-medium text-lg mb-1 drop-shadow-lg">{elm.title}</h4>
                       <p className="leading-relaxed text-neutral h-24 min-h-24 overflow-y-scroll mb-3">{elm.desc}</p>
                       <div className="flex flex-wrap gap-1 h-12 min-h-12">

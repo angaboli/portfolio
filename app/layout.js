@@ -6,7 +6,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 const inter = Jost({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Ngabonziza || Portfolio",
+  title: "Ngabonziza | Portfolio",
   description: "FullStack web developer on PHP and JS with 3 years of experience",
 };
 

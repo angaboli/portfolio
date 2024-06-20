@@ -51,7 +51,7 @@ export default function PersonalInfo() {
         <div className="about-me-2-wrap">
           <div className="flex flex-col md:flex-row md:justify-between gap-5">
             <div className="lg:w-1/3 md:w-2/3 mr-5">
-              <div className="flex justify-center rounded-md backdrop-opacity-10 backdrop-invert bg-neutral/30">
+              <div className="flex justify-center max-w-fit rounded-md backdrop-opacity-10 backdrop-invert bg-neutral/30">
                 <Image
                   width={240}
                   height={240}
@@ -99,7 +99,7 @@ export default function PersonalInfo() {
                       ))}
                     </ul>
                     <div className="w-full max-w-fit md:w-1/2 ">
-                      <div className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out">
+                      <div className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300">
                         <a href="/NgabonzizaAOlivier.pdf" download className="flex p-2.5"  >
                           <IoDownloadOutline className="text-secondary hover:text-neutral w-4 h-4 mr-2" />
                           Download CV
