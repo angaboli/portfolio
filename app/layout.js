@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className="">
+    <html lang="en" suppressHydrationWarning className="scroll-smooth focus:scroll-auto">
       <GoogleTagManager gtmId="GTM-NSPZ3VTH" />
       <body className={`${inter.className} `}>
         <Providers>

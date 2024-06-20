@@ -48,7 +48,7 @@ export const portfolioData = [
     target: "#portfolio-2",
     category: ["website"],
     project: "website",
-    languages: ["Next.js", "Tailwind", "React", "Vercel Host", "Git", "Locomotive Scroll"],
+    languages: ["Next.js", "Tailwind", "React", "Vercel Host", "Git"],
     client: "Portfolio",
     previewLink: "#",
     previewName: "Ngabonziza",
