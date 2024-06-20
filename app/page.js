@@ -1,4 +1,5 @@
 'use client';
+import { useEffect } from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
@@ -13,9 +14,8 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
 
   return (
-    <main className="">
+    <main className={``}>
       <Header />
-      <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
       <NavBar />
       <PersonalInfo />
       <Skills />

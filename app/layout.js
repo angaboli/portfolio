@@ -1,7 +1,9 @@
 import { Inter, Jost } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 
 const inter = Jost({ subsets: ["latin"] });
 
@@ -12,11 +14,25 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth focus:scroll-auto">
+    <html lang="en" suppressHydrationWarning className="">
       <GoogleTagManager gtmId="GTM-NSPZ3VTH" />
       <body className={`${inter.className} `}>
         <Providers>
           {children}
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            className="toast-container"
+            toastClassName="toast"
+            bodyClassName="toast-body"
+          />
         </Providers>
       </body>
     </html>

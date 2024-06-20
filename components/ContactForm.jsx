@@ -18,8 +18,6 @@ export default function ContactForm() {
     return null;
   }
 
-  // use Email js for recive message
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -32,27 +30,11 @@ export default function ContactForm() {
       .then(
         (result) => {
           console.log(result);
-          toast.success("Message Sent successfully!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+          toast.success("Message Sent successfully!");
           document.getElementById("contactForm").reset();
         },
         (error) => {
-          toast.error("Ops Message not Sent!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+          toast.error("Ops Message not Sent!");
         }
       );
   };

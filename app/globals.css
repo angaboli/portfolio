@@ -29,6 +29,58 @@ body {
   font-size: 14px;
 }
 
+.title {
+  @apply font-medium text-2xl mb-2 drop-shadow-lg;
+}
+
+.subtitle {
+  @apply font-medium text-lg text-secondary mb-1;
+}
+
+.small {
+  @apply font-light text-sm
+}
+
+.container {
+  width: 80%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+/* styles/globals.css */
+.toast-container {
+  /* Utilisez les classes Tailwind CSS ici si nécessaire */
+  @apply z-50;
+}
+
+.toast {
+  @apply bg-white text-gray-800 border border-gray-300 rounded-md shadow-lg p-4;
+}
+
+.toast-body {
+  @apply flex items-center;
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: rgb(var(--secondary));
+  }
+}
+
+.typing {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .10em solid rgb(var(--secondary));
+  animation: blink-caret 1s step-end infinite;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -54,42 +106,4 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-}
-
-.title {
-  @apply font-medium text-2xl mb-2 drop-shadow-lg;
-}
-
-.subtitle {
-  @apply font-medium text-lg text-secondary mb-1;
-}
-
-.small {
-  @apply font-light text-sm
-}
-
-.container {
-  width: 80%;
-  max-width: 1366px;
-  margin: 0 auto;
-}
-
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: rgb(var(--secondary));
-  }
-}
-
-.typing {
-  font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: .10em solid rgb(var(--secondary));
-  animation: blink-caret 1s step-end infinite;
 }
