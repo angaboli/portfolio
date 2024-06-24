@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 //import Masonry from "react-responsive-masonry"
 //import Masonry from "react-masonry-css";
 import { portfolioData } from "@/data/portfolioData";
@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <>
       <section id="projects">
-        <div className="container w-5/6 mx-auto py-10 px-8 mb-10 ">
+        <div className="container w-5/6 mx-auto py-10 px-8 mb-20 ">
           <div className="flex flex-wrap">
             <div className="w-1/2 mx-auto">
               <div className="mb-10 text-center">
@@ -28,7 +28,7 @@ export default function Projects() {
                       src={elm.imgSrc}
                       alt="portfolio"
                     />
-                    <div className="px-6 py-8 relative z-10 w-full border-4 border-accent bg-accent text-neutral opacity-0 hover:opacity-100 rounded-md ease-in duration-500">
+                    <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} className="px-6 py-8 relative z-10 w-full border-4 border-accent bg-accent text-neutral opacity-0 hover:opacity-100 rounded-md ease-in duration-500">
                       <h4 className="tracking-widest title-font font-medium text-lg mb-1 drop-shadow-lg">{elm.title}</h4>
                       <p className="leading-relaxed text-neutral h-24 min-h-24 overflow-y-scroll mb-3">{elm.desc}</p>
                       <div className="flex flex-wrap gap-1 h-12 min-h-12">
@@ -38,7 +38,7 @@ export default function Projects() {
                           </div>
                         ))}
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                 </a>
               ))}

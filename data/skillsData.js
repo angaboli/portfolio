@@ -67,7 +67,7 @@ export const skillsData = [
   {
     id: 14,
     icon: '',
-    label: "REST API",
+    label: "Rest API",
   },
   {
     id: 15,
@@ -96,6 +96,11 @@ export const skillsData = [
   },
   {
     id: 20,
+    icon: '',
+    label: "HTML/CSS",
+  },
+  {
+    id: 21,
     icon: '',
     label: "Adobe(Ps, Ai, Lr, Pr, xD)",
   },

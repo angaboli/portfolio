@@ -11,6 +11,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoDownloadOutline } from "react-icons/io5";
 import TypingText from "./TypingText";
+import { motion } from "framer-motion";
 
 export default function PersonalInfo() {
   const [showTypingText, setShowTypingText] = useState(true);
@@ -51,7 +52,8 @@ export default function PersonalInfo() {
         <div className="about-me-2-wrap">
           <div className="flex flex-col md:flex-row md:justify-between gap-5">
             <div className="lg:w-1/3 md:w-2/3 mr-5">
-              <div className="flex justify-center max-w-fit rounded-md backdrop-opacity-10 backdrop-invert bg-neutral/30">
+              <div className="flex justify-center max-w-fit rounded-md backdrop-opacity-10 backdrop-invert bg-neutral/30"
+              >
                 <Image
                   width={240}
                   height={240}
