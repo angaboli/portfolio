@@ -4,6 +4,7 @@ import { Providers } from "./providers";
 import { GoogleTagManager } from '@next/third-parties/google';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Jost({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth focus:scroll-auto">
       <GoogleTagManager gtmId="GTM-NSPZ3VTH" />
+      <Analytics />
       <body className={`${inter.className} `}>
         <Providers>
           {children}
