@@ -22,10 +22,10 @@ export default function ContactForm() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_ecafwhm",
-        "template_o92fcoc",
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
-        "TXb_tueFmBsYU3b8Z"
+        process.env.NEXT_PUBLIC_API
       )
       .then(
         (result) => {
