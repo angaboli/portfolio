@@ -21,14 +21,14 @@ export default function Resume() {
         </div>
       </div>
       <div className="min-h-screen flex flex-col justify-center">
-        <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
+        <div className="py-3 md:max-w-4xl md:mx-auto w-full px-2 md:px-0">
           <div className="relative antialiased text-sm" >
-            <div className="hidden sm:block w-1 bg-accent bg-gradient-to-b from-accent to-bkgEnd absolute h-full left-1/2 transform -translate-x-1/2"></div>
+            <div className="hidden md:block w-1 bg-accent bg-gradient-to-b from-accent to-bkgEnd absolute h-full left-1/2 transform -translate-x-1/2"></div>
             {resumeData.map((item, index) => (
-              <div className={`mt-6 sm:mt-0 sm:mb-12`} key={index}>
-                <div className="flex flex-col sm:flex-row items-center">
+              <div className={`mt-6 md:mt-0 md:mb-12`} key={index}>
+                <div className="flex flex-col md:flex-row items-center">
                   <div className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'} w-full mx-auto items-center`} >
-                    <div className={`w-full sm:w-1/2 ${index % 2 === 0 ? 'sm:pr-8' : 'sm:pl-8'}`}>
+                    <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
                       <div className="p-4 origin-center bg-bkgStart rounded-md shadow-md">
                         <h3 className="font-semibold text-secondary text-md mb-1">{item.title} - {item.company}</h3>
                         <div className='flex justify-between'>
@@ -46,7 +46,7 @@ export default function Resume() {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full bg-accent border-primary border-2 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full bg-accent border-primary border-2 w-8 h-8 absolute left-1/2 -translate-y-4 md:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                     {getSvgIcon(item.type)}
                   </div>
                 </div>
