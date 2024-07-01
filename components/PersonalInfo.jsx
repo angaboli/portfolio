@@ -9,6 +9,7 @@ import { CiMail } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { IoDownloadOutline } from "react-icons/io5";
 import TypingText from "./TypingText";
 import { motion } from "framer-motion";
@@ -33,6 +34,8 @@ export default function PersonalInfo() {
         return <FaGithub className="w-10 h-10 p-2 drop-shadow-md" />;
       case "linkedin":
         return <FaLinkedin className="w-10 h-10 p-2 drop-shadow-md" />;
+      case "instagram":
+        return <FaInstagram className="w-10 h-10 p-2 drop-shadow-md" />;
       default:
         return null;
     }
