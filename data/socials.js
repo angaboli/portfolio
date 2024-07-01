@@ -11,4 +11,10 @@ export const socialMediaData = [
     href: "https://www.linkedin.com/in/angaboli/",
     color:"#0A66C2"
   },
+  {
+    id: 3,
+    icon: "instagram",
+    href: "https://www.instagram.com/ngaboimages",
+    color:"#ec407a"
+  },
 ];
