@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { IoDownloadOutline } from "react-icons/io5";
-import TypingText from "./TypingText";
+import AnimatedTextCharacter from "./AnimatedTextCharacter";
 import { motion } from "framer-motion";
 
 export default function PersonalInfo() {
@@ -67,15 +67,12 @@ export default function PersonalInfo() {
             </div>
             <div className="lg:w-2/3 md:w-full">
               <div className="max-w-fit mb-">
-                <h4>Hello, I am&nbsp;
-                  <span className="subtitle mb-4">
-                    {
-                      showTypingText ? (
-                        <TypingText text="Aimé Olivier NGABONZIZA" />
-                      ) : (
-                        "Aimé Olivier NGABONZIZA"
-                      )}
-                  </span>
+                <h4
+                  className="mb-2 items-center flex flex-col md:flex-row whitespace-nowrap"
+                  initial="hidden"
+                  animate="visible"
+                >
+                  Hello, I am&nbsp; <AnimatedTextCharacter text="NGABONZIZA Aimé Olivier" />
                 </h4>
                 <p className="mb-4 break-words whitespace-normal">{bioData.descOne}</p>
                 <p className="mb-4 break-words whitespace-normal">{bioData?.descTwo}</p>

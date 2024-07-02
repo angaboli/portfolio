@@ -30,11 +30,11 @@ body {
 }
 
 .title {
-  @apply font-medium text-2xl mb-2 drop-shadow-lg;
+  @apply font-medium text-3xl mb-2 drop-shadow-lg;
 }
 
 .subtitle {
-  @apply font-medium text-lg text-secondary mb-1;
+  @apply font-medium text-xl text-secondary mb-1;
 }
 
 .small {
@@ -106,4 +106,22 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px !important;
+  height: 300px !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
