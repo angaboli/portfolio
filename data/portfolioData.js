@@ -24,6 +24,27 @@ export const portfolioData = [
     id: 2,
     class: "isotop-item logo",
     bgClass: "bg-prink",
+    imgSrc: "/img/project/consentio.png",
+    subtitle: "Consentio , Website",
+    title: "Consentio",
+    target: "#portfolio-1",
+    category: ["web app"],
+    project: "website",
+    languages: ["PHP", "Laravel", "Javascript", "Mysql" ,"Docker", "Git", "Trello"],
+    client: "D3COD",
+    previewLink: "https://consentio.cloud",
+    previewName: "Consentio",
+    desc: [
+      `Provided project management support for a web application focused on compliance management and data privacy management.
+      I oversaw the project, ensuring the creation and implementation of versioning tools and Dockerization to guarantee code maintainability
+      and robustness. These efforts enabled effective version control and enhanced data security,
+      while simplifying ongoing project maintenance.`,
+    ],
+  },
+  {
+    id: 3,
+    class: "isotop-item logo",
+    bgClass: "bg-prink",
     imgSrc: "/img/project/ngaboimages.png",
     subtitle: "Ngaboimage , Website",
     title: "Ngabo Images",
@@ -39,7 +60,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/portfolio.png",
@@ -59,7 +80,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/bellemme.png",
@@ -80,7 +101,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/shiva.png",
