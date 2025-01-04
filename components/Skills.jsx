@@ -36,7 +36,7 @@ export default function Skills() {
         <div className="flex flex-wrap">
           <div className="w-full">
             <div className="mb-10 text-center">
-              <h2 className="title">Areas of Expertise</h2>
+              <h2 className="title">Domaines d'expertise{/* Areas of Expertise */}</h2>
             </div>
           </div>
         </div>

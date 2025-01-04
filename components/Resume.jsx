@@ -17,7 +17,7 @@ export default function Resume() {
       <div className="flex flex-wrap">
         <div className="w-full">
           <div className="mb-10 text-center">
-            <h2 className="title">My Professional Journey</h2>
+            <h2 className="title">Mon parcours professionnel{/* My Professional Journey */}</h2>
           </div>
         </div>
       </div>

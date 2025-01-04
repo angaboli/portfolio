@@ -51,7 +51,7 @@ export default function ContactForm() {
         <label
           className={`input-label block mb-2 ${activeInputBoxes.includes('name') ? 'text-secondary' : ''}`}
         >
-          Name *
+          Nom complet *
         </label>
         <input
           name="user_name"
@@ -95,7 +95,7 @@ export default function ContactForm() {
           value="Send"
           className="form-btn bg-neutral flex gap-2 items-center  text-primary border-1 border-accent shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out py-2 px-4 rounded-xl transition duration-200 transform hover:-translate-y-1 active:translate-y-0"
         >
-          Submit
+          Envoyer
           <FiSend className="" />
         </button>
       </div>

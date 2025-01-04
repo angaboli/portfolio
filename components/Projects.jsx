@@ -17,7 +17,7 @@ export default function Projects() {
           <div className="flex flex-wrap">
             <div className="w-1/2 mx-auto">
               <div className="mb-10 text-center">
-                <h2 className="title">Projects</h2>
+                <h2 className="title">Projets</h2>
               </div>
             </div>
           </div>

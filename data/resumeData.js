@@ -1,5 +1,19 @@
 export const resumeData = [
   {
+    title: "Développeur full stack",
+    company: "Pragmea",
+    date: "2024 - Présent",
+    location: "Lille, France",
+    description: [
+      "Analyse des besoins clients et rédaction de spécifications techniques.",
+      "Conception, développement et tests de programmes et applications.",
+      "Identification et correction des problèmes techniques.",
+      "Création de supports techniques et gestion des informations.",
+    ],
+    isActive: true,
+    type: "work",
+  },
+  {
     title: "Développeur web",
     company: "HD Communication",
     date: "2022 - 2024",

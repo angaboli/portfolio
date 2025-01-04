@@ -47,7 +47,7 @@ export default function PersonalInfo() {
         <div className="flex flex-wrap">
           <div className="w-full">
             <div className="mb-10 text-center">
-              <h2 className="title">The Man Behind the Keyboard</h2>
+              <h2 className="title">{/* The Man Behind the Keyboard */}L'homme derrière le clavier</h2>
             </div>
           </div>
         </div>

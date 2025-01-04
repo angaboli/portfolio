@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       colors:{
-  primary:"rgba(var(--primary), <alpha-value>)",
+        primary:"rgba(var(--primary), <alpha-value>)",
         secondary:"rgba(var(--secondary), <alpha-value>)",
         accent:"rgba(var(--accent), <alpha-value>)",
         neutral:"rgba(var(--neutral), <alpha-value>)",
