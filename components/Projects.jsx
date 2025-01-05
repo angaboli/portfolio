@@ -10,6 +10,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 export default function Projects() {
+
   return (
     <>
       <section id="projects">
@@ -46,7 +47,9 @@ export default function Projects() {
                 modifier: 3,
                 slideShadows: true,
               }}
-              pagination={true}
+              pagination={{
+                clickable: true
+              }}
               modules={[EffectCoverflow, Pagination]}
               className="mySwiper"
             >

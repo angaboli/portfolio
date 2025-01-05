@@ -125,3 +125,14 @@ body {
   display: block;
   width: 100%;
 }
+
+span.swiper-pagination-bullet{
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  opacity: 0.75;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: rgb(var(--secondary));
+  opacity: 1;
+}

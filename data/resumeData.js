@@ -14,6 +14,19 @@ export const resumeData = [
     type: "work",
   },
   {
+    title: "Développeur full stack",
+    company: "Freelance",
+    date: "2024",
+    location: "Lille, France",
+    description: [
+      "Collaboration avec les clients pour élaborer des solutions adaptées à leurs objectifs.",
+      "Gestion et suivi de projets web, depuis la définition des besoins jusqu'à la livraison.",
+      "Création d’applications web et de sites web sur mesure.",
+    ],
+    isActive: true,
+    type: "work",
+  },
+  {
     title: "Développeur web",
     company: "HD Communication",
     date: "2022 - 2024",
