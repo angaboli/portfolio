@@ -1,4 +1,4 @@
 export const bioData = {
-  descOne: `Full-Stack Web developer with 3 years of experience in PHP and JavaScript,
- Passionate about web innovation. My commitment to continuous learning constantly enriches my developing skills`,
+  descOne: `Développeur Web Fullstack basé à Lille, je conçois des sites et applications web performants avec PHP (WordPress) et JavaScript (React, Next.js, Nuxt.js).
+Je travaille sur des projets web sur-mesure : vitrine, e-commerce, dashboards, SEO, intégration d’API, optimisation performance.`,
 };
