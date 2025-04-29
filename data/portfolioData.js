@@ -155,7 +155,7 @@ export const portfolioData = [
       "Swiper",
     ],
     client: "Portfolio",
-    previewLink: "#",
+    previewLink: "/#",
     previewName: "Ngabonziza",
     desc: [
       `Un site web portfolio professionnel conçu pour mettre en valeur mes compétences, 

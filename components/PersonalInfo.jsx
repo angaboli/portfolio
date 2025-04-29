@@ -4,7 +4,7 @@ import Image from "next/image";
 import { profileInfo } from "@/data/profileInfo";
 import { bioData } from "@/data/bioData";
 import { socialMediaData } from "@/data/socials";
-import { IoPhonePortraitOutline } from "react-icons/io5";
+import { IoCalendar, IoPhonePortraitOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
@@ -47,9 +47,7 @@ export default function PersonalInfo() {
         <div className="flex flex-wrap">
           <div className="w-full">
             <div className="mb-10 text-center">
-              <h2 className="title">
-                {/* The Man Behind the Keyboard */}L'homme derrière le clavier
-              </h2>
+              <h2 className="title">L'homme derrière le clavier</h2>
             </div>
           </div>
         </div>
@@ -101,7 +99,7 @@ export default function PersonalInfo() {
                         </a>
                       </div>
                     ))}
-                    <ul className="w-full md:w-1/2 flex gap-2.5 mb-4">
+                    <ul className="w-full md:w-1/2 flex gap-2.5 mb-4 md:mb-0">
                       {socialMediaData.map((elm, i) => (
                         <li key={i} className="w-10 h-10">
                           <a
@@ -114,7 +112,16 @@ export default function PersonalInfo() {
                         </li>
                       ))}
                     </ul>
-                    <div className="w-full max-w-fit md:w-1/2 ">
+                    <div className="flex flex-col lg:flex-row gap-3 w-full max-w-fit md:w-1/2 ">
+                      <a
+                        className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300 flex p-2.5"
+                        href="https://calendar.app.google/Ttdra3QBBqRRXVxp8"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <IoCalendar className="text-secondary hover:text-neutral w-4 h-4 mr-2" />
+                        Reservez un RDV
+                      </a>
                       <div className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300">
                         <a
                           href="/NgabonzizaAOlivier.pdf"
@@ -122,7 +129,7 @@ export default function PersonalInfo() {
                           className="flex p-2.5"
                         >
                           <IoDownloadOutline className="text-secondary hover:text-neutral w-4 h-4 mr-2" />
-                          Download CV
+                          Télécharger mon CV
                         </a>
                       </div>
                     </div>

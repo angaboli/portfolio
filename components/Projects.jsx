@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, EffectCards, Pagination } from "swiper/modules";
+import { EffectCards, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -64,9 +64,8 @@ export default function Projects() {
                   >
                     <div className="flex relative">
                       <Image
-                        width={310}
-                        height={310}
-                        className="w-full absolute backdrop-brightness-75 inset-0 h-full object-cover object-center rounded-md"
+                        fill
+                        className="w-[480px] h-[640px] absolute backdrop-brightness-75 inset-0 object-cover object-center rounded-md"
                         src={elm.imgSrc}
                         alt="portfolio"
                       />
