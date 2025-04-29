@@ -39,7 +39,7 @@ export default function PersonalInfo() {
       default:
         return null;
     }
-  }
+  };
 
   return (
     <section id="home" className="mt-10">
@@ -47,7 +47,9 @@ export default function PersonalInfo() {
         <div className="flex flex-wrap">
           <div className="w-full">
             <div className="mb-10 text-center">
-              <h2 className="title">{/* The Man Behind the Keyboard */}L'homme derrière le clavier</h2>
+              <h2 className="title">
+                {/* The Man Behind the Keyboard */}L'homme derrière le clavier
+              </h2>
             </div>
           </div>
         </div>
@@ -55,8 +57,7 @@ export default function PersonalInfo() {
         <div className="about-me-2-wrap">
           <div className="flex flex-col md:flex-row md:justify-between gap-5">
             <div className="lg:w-1/3 md:w-2/3 mr-5">
-              <div className="flex justify-center max-w-fit rounded-md backdrop-opacity-10 backdrop-invert bg-neutral/30"
-              >
+              <div className="flex justify-center max-w-fit rounded-md backdrop-opacity-10 backdrop-invert bg-neutral/30">
                 <Image
                   width={240}
                   height={240}
@@ -72,15 +73,24 @@ export default function PersonalInfo() {
                   initial="hidden"
                   animate="visible"
                 >
-                  Hello, I am&nbsp; <AnimatedTextCharacter text="NGABONZIZA Aimé Olivier" />
+                  Salut, je suis&nbsp;{" "}
+                  <AnimatedTextCharacter text="NGABONZIZA Aimé Olivier" />
                 </h4>
-                <p className="mb-4 break-words whitespace-normal">{bioData.descOne}</p>
-                <p className="mb-4 break-words whitespace-normal">{bioData?.descTwo}</p>
+                <p className="mb-4 break-words whitespace-normal">
+                  {bioData.descOne}
+                </p>
+                <p className="mb-4 break-words whitespace-normal">
+                  {bioData?.descTwo}
+                </p>
                 <div className="bostami-personal-info-contact">
                   <div className="flex flex-wrap mb-4">
                     {contactData.map((elm, i) => (
                       <div key={i} className="w-full md:w-1/2 mb-4">
-                        <a href={elm.text.href} target="_blank" className="flex items-center py-2.5 gap-2">
+                        <a
+                          href={elm.text.href}
+                          target="_blank"
+                          className="flex items-center py-2.5 gap-2"
+                        >
                           <div className="text-xl text-secondary bg-neutral rounded-lg shadow flex p-2.5 gap-5 text-center transition duration-300">
                             {chooseIcon(elm.iconClass)}
                           </div>
@@ -94,7 +104,11 @@ export default function PersonalInfo() {
                     <ul className="w-full md:w-1/2 flex gap-2.5 mb-4">
                       {socialMediaData.map((elm, i) => (
                         <li key={i} className="w-10 h-10">
-                          <a style={{ color: elm.color }} href={elm.href} target="_blank">
+                          <a
+                            style={{ color: elm.color }}
+                            href={elm.href}
+                            target="_blank"
+                          >
                             {chooseIcon(elm.icon)}
                           </a>
                         </li>
@@ -102,7 +116,11 @@ export default function PersonalInfo() {
                     </ul>
                     <div className="w-full max-w-fit md:w-1/2 ">
                       <div className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300">
-                        <a href="/NgabonzizaAOlivier.pdf" download className="flex p-2.5"  >
+                        <a
+                          href="/NgabonzizaAOlivier.pdf"
+                          download
+                          className="flex p-2.5"
+                        >
                           <IoDownloadOutline className="text-secondary hover:text-neutral w-4 h-4 mr-2" />
                           Download CV
                         </a>
@@ -116,5 +134,5 @@ export default function PersonalInfo() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -37,7 +37,7 @@ export default function Contact() {
         </motion.div>
         <div className="footer-copyright bg-bkgStart text-center pb-20 pt-6">
           <div className="text-xs text-light">
-            <span>© {new Date().getFullYear()} All Rights Reserved.</span>
+            <span>© {new Date().getFullYear()} Tous droits réservés.</span>
           </div>
         </div>
       </motion.div>
