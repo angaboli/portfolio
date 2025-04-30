@@ -206,6 +206,24 @@ export const portfolioData = [
     ],
   },
   {
+    id: 9,
+    class: "isotop-item logo",
+    bgClass: "bg-prink",
+    imgSrc: "/img/project/pragmea.jpg",
+    subtitle: "Pragmea , Refonte du site",
+    title: "Pragmea",
+    target: "#portfolio-1",
+    category: ["site web"],
+    project: "site web",
+    languages: ["WordPress", "ACF", "Tailwind", "JavaScript"],
+    client: "Pragmea",
+    previewLink: "https://pragmea.fr",
+    previewName: "pragmea.fr",
+    desc: [
+      `Refonte complète du site web de l'agence Pragmea pour mieux représenter ses services et son identité. Utilisation de WordPress avec ACF pour une gestion de contenu flexible, Tailwind CSS pour un design moderne et responsive, et JavaScript pour des interactions dynamiques.`,
+    ],
+  },
+  {
     id: 10,
     class: "isotop-item logo",
     bgClass: "bg-prink",
@@ -236,22 +254,5 @@ export const portfolioData = [
       utilisateur optimisée grâce à des technologies de pointe.`,
     ],
   },
-  {
-    id: 9,
-    class: "isotop-item logo",
-    bgClass: "bg-prink",
-    imgSrc: "/img/project/pragmea.jpg",
-    subtitle: "Pragmea , Refonte du site",
-    title: "Pragmea",
-    target: "#portfolio-1",
-    category: ["site web"],
-    project: "site web",
-    languages: ["WordPress", "ACF", "Tailwind", "JavaScript"],
-    client: "Pragmea",
-    previewLink: "https://pragmea.fr",
-    previewName: "pragmea.fr",
-    desc: [
-      `Refonte complète du site web de l'agence Pragmea pour mieux représenter ses services et son identité. Utilisation de WordPress avec ACF pour une gestion de contenu flexible, Tailwind CSS pour un design moderne et responsive, et JavaScript pour des interactions dynamiques.`,
-    ],
-  },
+ 
 ];

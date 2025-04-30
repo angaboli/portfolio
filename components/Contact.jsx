@@ -23,13 +23,13 @@ export default function Contact() {
           style={{ scaleY: scrollYProgress }}
         >
           <div className="flex flex-wrap pt-16">
-            <div className="w-1/2 mx-auto">
+            <div className="w-full md:w-1/2 mx-auto">
               <div className="mb-10 text-center">
                 <h2 className="title">Contactez-moi</h2>
               </div>
             </div>
           </div>
-          <motion.div className="mb-20 w-2/3 pb-16 mx-auto">
+          <motion.div className="mb-20 w-4/5 md:w-2/3 pb-16 mx-auto">
             <div className="w-full">
               <ContactForm />
             </div>

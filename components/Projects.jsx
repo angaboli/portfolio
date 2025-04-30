@@ -56,23 +56,24 @@ export default function Projects() {
               className="mySwiper"
             >
               {portfolioData.map((elm, i) => (
-                <SwiperSlide key={i}>
+                <SwiperSlide key={i} className="">
                   <a
                     href={elm.previewLink}
                     target="_blank"
-                    className="w-full md:w-1/2 p-4 lg:w-1/3 "
+                    className=" w-full md:w-1/2 p-4 lg:w-1/3 "
                   >
                     <div className="flex relative">
                       <Image
-                        fill
-                        className="w-[480px] h-[640px] absolute backdrop-brightness-75 inset-0 object-cover object-center rounded-md"
+                        className="w-[640px] h-[320px] absolute backdrop-brightness-75 inset-0 object-cover object-center rounded-md"
                         src={elm.imgSrc}
-                        alt="portfolio"
+                        width={640}
+                        height={320}
+                        alt={`portfolio ${elm.title}`}
                       />
                       <motion.div
                         whileHover={{ scale: 1.15 }}
-                        whileTap={{ scale: 0.8 }}
-                        className="px-6 py-8 relative z-10 w-full border-4 border-accent bg-accent text-neutral opacity-0 hover:opacity-100 focus:opacity-100 rounded-md ease-in duration-500"
+                        whileTap={{ scale: 0.75 }}
+                        className="px-14 py-8 relative z-10 w-full border-4 border-accent bg-accent text-neutral opacity-0 hover:opacity-100 focus:opacity-100 rounded-md ease-in duration-500"
                       >
                         <h4 className="tracking-widest title-font font-medium text-lg mb-1 drop-shadow-lg">
                           {elm.title}
