@@ -67,7 +67,7 @@ export const portfolioData = [
       compatibles avec leurs véhicules.`,
     ],
   },
-  {
+  /* {
     id: 3,
     class: "isotop-item logo",
     bgClass: "bg-prink",
@@ -87,7 +87,7 @@ export const portfolioData = [
       et un système de recherche avancé pour aider les clients à trouver les accessoires 
       compatibles avec leurs véhicules.`,
     ],
-  },
+  }, */
   {
     id: 4,
     class: "isotop-item logo",

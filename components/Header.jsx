@@ -1,5 +1,7 @@
+'use client';
 import React, { useEffect, useState } from "react";
 import ThemeSwitch from "./ThemeSwitch";
+import Link from "next/link";
 
 export default function Header() {
 
@@ -10,8 +12,9 @@ export default function Header() {
         <a href="/" className="p-1.5">
           <span className="subtitle">{`< />`}</span>
         </a>
-        <div className="cursor-pointer">
-          <ThemeSwitch className="text-secondary" />
+        <div className="flex gap-8">
+          <Link href="/blog" className="text-secondary text-lg items-center">Blog</Link>
+          <ThemeSwitch className="cursor-pointer text-secondary" />
         </div>
       </div>
     </header>

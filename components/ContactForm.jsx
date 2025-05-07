@@ -48,12 +48,13 @@ export default function ContactForm() {
   return (
     <form id="contactForm" className="contact-form" ref={form} onSubmit={sendEmail}>
       <div className="form-input-item mb-4">
-        <label
+        <label htmlFor="user_name"
           className={`input-label block mb-2 ${activeInputBoxes.includes('name') ? 'text-secondary' : ''}`}
         >
           Nom complet *
         </label>
         <input
+          id="user_name"
           name="user_name"
           className={`input-box border rounded w-full p-2 ${activeInputBoxes.includes('name') ? 'border-accent' : ''}`}
           type="text"
@@ -62,12 +63,13 @@ export default function ContactForm() {
         />
       </div>
       <div className="form-input-item mb-4">
-        <label
+        <label htmlFor="user_email"
           className={`input-label block mb-2 ${activeInputBoxes.includes('gmail') ? 'text-secondary' : ''}`}
         >
           Email *
         </label>
         <input
+          id="user_email"
           name="user_email"
           className={`input-box border rounded w-full p-2 ${activeInputBoxes.includes('gmail') ? 'border-accent' : ''}`}
           type="email"
@@ -76,13 +78,14 @@ export default function ContactForm() {
         />
       </div>
       <div className="form-input-item mb-4">
-        <label
+        <label htmlFor="message"
           className={`input-label block mb-2 ${activeInputBoxes.includes('message') ? 'text-secondary' : ''}`}
         >
           Message *
         </label>
         <textarea
           name="message"
+          id="message"
           className={`input-box border rounded w-full p-2 ${activeInputBoxes.includes('message') ? 'border-accent' : ''}`}
           onClick={() => handleClick('message')}
           cols="30"

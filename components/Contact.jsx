@@ -17,7 +17,7 @@ export default function Contact() {
 
   return (
     <>
-      <motion.div id="contact" className="" style={{ scale }}>
+      <motion.section id="contact" className="" style={{ scale }}>
         <motion.div
           className="container bg-bkgStart rounded-2xl  shadow-md"
           style={{ scaleY: scrollYProgress }}
@@ -35,12 +35,8 @@ export default function Contact() {
             </div>
           </motion.div>
         </motion.div>
-        <div className="footer-copyright bg-bkgStart text-center pb-20 pt-6">
-          <div className="text-xs text-light">
-            <span>© {new Date().getFullYear()} Tous droits réservés.</span>
-          </div>
-        </div>
-      </motion.div>
+        
+      </motion.section>
     </>
   );
 }

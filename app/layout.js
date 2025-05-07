@@ -5,12 +5,14 @@ import { GoogleTagManager } from '@next/third-parties/google';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import { Analytics } from "@vercel/analytics/react"
+import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 
 const inter = Jost({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Ngabonziza | Portfolio",
-  description: "FullStack web developer on PHP and JS with 3 years of experience",
+  description: `Développeur Web Fullstack basé à Lille, je conçois des sites et applications web performants avec PHP (WordPress) et JavaScript (React, Next.js, Nuxt.js).
+Je travaille sur des projets web sur-mesure : vitrine, e-commerce, dashboards, SEO, intégration d’API, optimisation performance.`,
 };
 
 export default function RootLayout({ children }) {
@@ -20,7 +22,9 @@ export default function RootLayout({ children }) {
       <Analytics />
       <body className={`${inter.className} `}>
         <Providers>
-          {children}
+          <ClientLayoutWrapper>
+            {children}
+          </ClientLayoutWrapper>
           <ToastContainer
             position="top-right"
             autoClose={5000}

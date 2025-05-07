@@ -66,14 +66,14 @@ export default function PersonalInfo() {
             </div>
             <div className="lg:w-2/3 md:w-full">
               <div className="max-w-fit mb-">
-                <h4
+                <h3
                   className="mb-2 items-center flex flex-col md:flex-row whitespace-nowrap"
                   initial="hidden"
                   animate="visible"
                 >
                   Salut, je suis&nbsp;{" "}
                   <AnimatedTextCharacter text="NGABONZIZA Aimé Olivier" />
-                </h4>
+                </h3>
                 <p className="mb-4 break-words whitespace-normal">
                   {bioData.descOne}
                 </p>
@@ -88,10 +88,11 @@ export default function PersonalInfo() {
                           href={elm.text.href}
                           target="_blank"
                           className="flex items-center py-2.5 gap-2"
+                          aria-label={elm.text.label}
                         >
-                          <div className="text-xl text-secondary bg-neutral rounded-lg shadow flex p-2.5 gap-5 text-center transition duration-300">
+                          <button className="text-xl text-secondary bg-neutral rounded-lg shadow flex p-2.5 gap-5 text-center transition duration-300" aria-label={elm.text.label}>
                             {chooseIcon(elm.iconClass)}
-                          </div>
+                          </button>
                           <div className="text">
                             <span className="small">{elm.text.label}</span>
                             <p>{elm.text.value}</p>
@@ -106,6 +107,7 @@ export default function PersonalInfo() {
                             style={{ color: elm.color }}
                             href={elm.href}
                             target="_blank"
+                            aria-label={elm.icon}
                           >
                             {chooseIcon(elm.icon)}
                           </a>

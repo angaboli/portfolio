@@ -75,9 +75,9 @@ export default function Projects() {
                         whileTap={{ scale: 0.75 }}
                         className="px-14 py-8 relative z-10 w-full border-4 border-accent bg-accent text-neutral opacity-0 hover:opacity-100 focus:opacity-100 rounded-md ease-in duration-500"
                       >
-                        <h4 className="tracking-widest title-font font-medium text-lg mb-1 drop-shadow-lg">
+                        <h3 className="tracking-widest title-font font-medium text-lg mb-1 drop-shadow-lg">
                           {elm.title}
-                        </h4>
+                        </h3>
                         <p className="leading-relaxed text-neutral h-24 min-h-24 overflow-y-scroll mb-3">
                           {elm.desc}
                         </p>
