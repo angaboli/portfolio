@@ -4,7 +4,7 @@ export const blogData = [
     slug: "cv-compatible-ats-recruteurs",
     title:
       "Pourquoi ton CV n'est pas lu par les recruteurs (et comment y remédier avec un CV compatible ATS)",
-    imageKey: "cv-ats-recruteurs",
+    imageKey: "img/blog/cv-compatible-ats.jpg",
     content: `
   **Tu envoies des dizaines de candidatures sans réponse ?** Tu fais peut-être face à un mur invisible : l'ATS, ou **Applicant Tracking System**.
   
@@ -44,7 +44,7 @@ export const blogData = [
     id: "a47ac10b58cc4372a5670e02b2c3d480",
     slug: "nextjs-excellent-choix-site-web-2025",
     title: "Pourquoi Next.js est un excellent choix pour ton site web en 2025",
-    imageKey: "nextjs-site-web-2025",
+    imageKey: "img/blog/nextjs-site-web-2025.jpg",
     content: `
 En 2025, les exigences des utilisateurs et de Google ont changé : **vitesse, SEO, expérience fluide**. Et Next.js coche toutes les cases.
 
@@ -76,7 +76,7 @@ C’est un framework React qui permet de créer des sites statiques ou dynamique
 - Authentification : NextAuth.js ou Clerk
 - Base de données : PostgreSQL via Prisma
 
-👉 Tu veux un site rapide, propre et optimisé pour Google ? [Contacte-moi ici](#)
+👉 Tu veux un site rapide, propre et optimisé pour Google ? [Contacte-moi ici](/#contact)
 
 **Mots-clés** : Next.js, développement web 2025, React, SEO, SSR, SSG, site moderne, alternative WordPress, performance web
   `,
@@ -85,7 +85,7 @@ C’est un framework React qui permet de créer des sites statiques ou dynamique
     id: "b47ac10b58cc4372a5670e02b2c3d481",
     slug: "developper-site-web-a-z-methode",
     title: "Comment je développe un site web de A à Z : ma méthode pas à pas",
-    imageKey: "developper-site-web-methodologie",
+    imageKey: "img/blog/developper-site-web.jpg",
     content: `
 Tu veux un site web pro ? Voici comment je transforme une idée en un **site moderne, rapide et efficace**, étape par étape.
 
@@ -118,7 +118,7 @@ Tu veux un site web pro ? Voici comment je transforme une idée en un **site mod
 - Un site rapide, bien référencé, sécurisé, évolutif
 - Capable de convertir, informer ou vendre
 
-👉 Tu veux le même processus pour ton projet ? [Discutons ici](#)
+👉 Tu veux le même processus pour ton projet ? [Discutons ici](/#contact)
 
 **Mots-clés** : développement site web, méthode agile, site vitrine, WordPress, Next.js, UX design, SEO, responsive
   `,
@@ -128,7 +128,7 @@ Tu veux un site web pro ? Voici comment je transforme une idée en un **site mod
     slug: "wordpress-performance-page-builders-alternatives",
     title:
       "WordPress et performance : pourquoi éviter les page builders comme Elementor et Divi",
-    imageKey: "wordpress-performance-acf-gutenberg",
+    imageKey: "img/blog/wp-performance.jpg",
     content: `
 Tu veux un site rapide ? Le choix du builder est **crucial**. Elementor ou Divi sont peut-être les pires options pour la performance.
 
@@ -161,7 +161,7 @@ Tu veux un site rapide ? Le choix du builder est **crucial**. Elementor ou Divi 
 - **+25 points** sur Google PageSpeed
 - **+35 %** de conversions sur landing pages
 
-👉 Besoin d’un site WordPress qui charge vite ? [Contacte-moi ici](#)
+👉 Besoin d’un site WordPress qui charge vite ? [Contacte-moi ici](/#contact)
 
 **Mots-clés** : WordPress rapide, Elementor vs Gutenberg, ACF, optimisation site, performance web, page builder, SEO technique
   `,

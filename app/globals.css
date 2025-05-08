@@ -110,6 +110,10 @@ body {
   }
 }
 
+.split-word {
+  will-change: transform, opacity;
+}
+
 .swiper {
   width: 100%;
   height: auto;
