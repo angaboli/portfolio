@@ -59,13 +59,13 @@ export default function BlogPostContent({ post }) {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent hover:underline"
+                  className="text-secondary hover:underline"
                   {...props}
                 />
               ) : (
                 <Link
                   href={href || "#"}
-                  className="text-accent hover:underline"
+                  className="text-secondary hover:underline"
                   {...props}
                 />
               ),
@@ -80,7 +80,7 @@ export default function BlogPostContent({ post }) {
             ),
             blockquote: ({ node, ...props }) => (
               <blockquote
-                className="border-l-4 border-accent pl-4 italic my-6"
+                className="border-l-4 border-secondary pl-4 italic my-6"
                 {...props}
               />
             ),

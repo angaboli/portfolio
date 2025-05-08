@@ -41,7 +41,7 @@ export default function BlogPage() {
       <section className="container mx-auto max-w-3xl py-10 px-4">
         <div ref={containerRef}>
         <h1 className="text-4xl font-bold mb-8 text-center">Blog</h1>
-        <p className="text-center text-lg text-accent mb-8">Découvrez mes derniers articles sur le développement web et les meilleures pratiques.</p>
+        <p className="text-center text-lg text-gray-600 mb-8">Découvrez mes derniers articles sur le développement web et les meilleures pratiques.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8 max-w-3xl mx-auto border-t border-accent py-8">
           {blogData.map((post) => (
