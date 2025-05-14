@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, Pagination } from "swiper/modules";
+import { Grid, Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
+import "swiper/css/grid";
 import "swiper/css/pagination";
 
 export default function Projects() {
@@ -38,42 +38,62 @@ export default function Projects() {
           >
             {/* <div className="flex flex-wrap justify-center -m-4"> */}
             <Swiper
-              effect={"cards"}
+              effect={"grid"}
               grabCursor={true}
-              centeredSlides={true}
-              slidesPerView={"auto"}
-              coverflowEffect={{
+              /* centeredSlides={true} */
+              slidesPerView={"1"}
+              breakpoints={{
+                1280: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 1,
+                },
+                375: {
+                  slidesPerView: 1,
+                },
+              }}
+              spaceBetween={30}
+              grid={{
+                rows: 2,
+                fill: "row",
+              }}
+              /* coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
                 depth: 100,
                 modifier: 3,
                 slideShadows: true,
-              }}
+              }} */
               pagination={{
                 clickable: true,
               }}
-              modules={[EffectCards, Pagination]}
+              modules={[Grid, Pagination]}
               className="mySwiper"
             >
               {portfolioData.map((elm, i) => (
-                <SwiperSlide key={i} className="">
+                <SwiperSlide key={i} className="px-2">
                   <a
                     href={elm.previewLink}
                     target="_blank"
-                    className=" w-full md:w-1/2 p-4 lg:w-1/3 "
+                    className=" w-full md:w-1/2 p-4 lg:w-1/3"
                   >
-                    <div className="flex relative">
+                    <div className="flex relative ">
                       <Image
-                        className="w-[640px] h-[320px] absolute backdrop-brightness-75 inset-0 object-cover object-center rounded-md"
+                        className="w-[380px] h-auto absolute backdrop-brightness-75 inset-0 object-cover object-center rounded-md"
                         src={elm.imgSrc}
-                        width={640}
-                        height={320}
+                        /* width={380}
+                        height={210} */
+                        fill
                         alt={`portfolio ${elm.title}`}
                       />
                       <motion.div
-                        whileHover={{ scale: 1.15 }}
-                        whileTap={{ scale: 0.75 }}
-                        className="px-14 py-8 relative z-10 w-full border-4 border-accent bg-accent text-neutral opacity-0 hover:opacity-100 focus:opacity-100 rounded-md ease-in duration-500"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="px-4 md:px-8 lg:px-14 py-8 relative z-10 w-full border-4 border-accent bg-accent text-neutral opacity-0 hover:opacity-100 focus:opacity-100 rounded-md ease-in duration-500"
                       >
                         <h3 className="tracking-widest title-font font-medium text-lg mb-1 drop-shadow-lg">
                           {elm.title}

@@ -124,7 +124,7 @@ body {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 640px !important;
+  /* width: 640px !important;
   height: 320px !important;
   @media screen and (max-width: 768px) {
     width: 380px !important;
@@ -133,7 +133,7 @@ body {
   @media screen and (max-width: 425px) {
     width: 300px !important;
     height: 220px !important;
-  }
+  } */
 }
 
 .swiper-slide img {
