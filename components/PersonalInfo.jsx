@@ -47,7 +47,7 @@ export default function PersonalInfo() {
         <div className="flex flex-wrap">
           <div className="w-full">
             <div className="mb-10 text-center">
-              <h2 className="title">L'homme derrière le clavier</h2>
+              <h2 className="title">Développeur Web Fullstack – L’expérience utilisateur au service de la performance.</h2>
             </div>
           </div>
         </div>

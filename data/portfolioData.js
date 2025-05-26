@@ -245,8 +245,8 @@ export const portfolioData = [
       "Git",
     ],
     client: "Cocogo Ent",
-    previewLink: "https://cocogo.cloud",
-    previewName: "cocogo.cloud",
+    previewLink: "https://cocogo.ci",
+    previewName: "cocogo.ci",
     desc: [
       `Une application de réservation de voitures disposant d'un back-office WordPress headless 
       pour la gestion et d'un frontend moderne développé avec Next.js. 

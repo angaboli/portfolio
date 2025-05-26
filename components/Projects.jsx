@@ -45,15 +45,31 @@ export default function Projects() {
               breakpoints={{
                 1280: {
                   slidesPerView: 3,
+                  grid: {
+                    rows: 2,
+                    fill: "row",
+                  },
                 },
                 1024: {
                   slidesPerView: 2,
+                  grid: {
+                    rows: 2,
+                    fill: "row",
+                  },
                 },
                 768: {
                   slidesPerView: 1,
+                  grid: {
+                    rows: 1,
+                    fill: "row",
+                  },
                 },
                 375: {
                   slidesPerView: 1,
+                  grid: {
+                    rows: 1,
+                    fill: "row",
+                  },
                 },
               }}
               spaceBetween={30}
