@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import { Analytics } from "@vercel/analytics/react"
 import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Jost({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <ClientLayoutWrapper>
             {children}
+            <SpeedInsights />
           </ClientLayoutWrapper>
           <ToastContainer
             position="top-right"
