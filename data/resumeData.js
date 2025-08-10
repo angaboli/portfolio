@@ -1,8 +1,30 @@
 export const resumeData = [
   {
     title: "Développeur full stack",
+    company: "Projet personnel",
+    date: "2025 - Présent",
+    location: "Lille, France",
+    description: [
+      "Création de CVFacto, application Next.js/PostgreSQL générant des CV compatibles ATS à partir d’un profil structuré, avec export PDF optimisé",
+      "Développement d’un plugin WordPress intégrant des blocs Gutenberg personnalisés en React/Tailwind pour améliorer la productivité éditoriale",
+    ],
+    stack: [
+      "Next.js",
+      "JavaScript",
+      "PHP",
+      "WordPress",
+      "Prisma",
+      "PostgreSQL",
+      "Gutenberg(React)",
+      "Git",
+    ],
+    isActive: true,
+    type: "work",
+  },
+  {
+    title: "Développeur full stack",
     company: "Pragmea",
-    date: "2024 - Présent",
+    date: "2024 - 2025",
     location: "Lille, France",
     description: [
       "Analyse des besoins clients et rédaction de spécifications techniques.",
