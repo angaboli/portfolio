@@ -12,7 +12,7 @@ export default function Header() {
         <a href="/" className="p-1.5">
           <span className="subtitle">{`< />`}</span>
         </a>
-        <div className="flex gap-8">
+        <div className="flex items-center gap-8">
           <Link href="/blog" className="text-secondary text-lg items-center">Blog</Link>
           <ThemeSwitch className="cursor-pointer text-secondary" />
         </div>
