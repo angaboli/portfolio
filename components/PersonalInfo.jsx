@@ -116,22 +116,22 @@ export default function PersonalInfo() {
                     </ul>
                     <div className="flex flex-col lg:flex-row gap-3 w-full max-w-fit md:w-1/2 ">
                       <a
-                        className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300 flex p-2.5"
+                        className="group rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent hover:bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300 flex p-2.5"
                         href="https://calendar.app.google/Ttdra3QBBqRRXVxp8"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <IoCalendar className="text-secondary hover:text-neutral w-4 h-4 mr-2" />
-                        Reservez un RDV
+                        <IoCalendar className="text-secondary group-hover:text-neutral w-4 h-4 mr-2" />
+                        <span className="group-hover:text-neutral group-hover:from-accent group-hover:to-secondary">Reservez un RDV</span>
                       </a>
-                      <div className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300">
+                      <div className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent hover:bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300">
                         <a
                           href="/NgabonzizaAOlivier.pdf"
                           download
-                          className="flex p-2.5"
+                          className="flex p-2.5 group"
                         >
-                          <IoDownloadOutline className="text-secondary hover:text-neutral w-4 h-4 mr-2" />
-                          Télécharger mon CV
+                          <IoDownloadOutline className="text-secondary group-hover:text-neutral w-4 h-4 mr-2" />
+                          <span className="group-hover:text-neutral group-hover:from-accent group-hover:to-secondary">Télécharger mon CV</span>
                         </a>
                       </div>
                     </div>

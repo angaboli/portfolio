@@ -5,7 +5,7 @@ export const resumeData = [
     date: "2025 - Présent",
     location: "Lille, France",
     description: [
-      "Création de CVFacto, application Next.js/PostgreSQL générant des CV compatibles ATS à partir d’un profil structuré, avec export PDF optimisé",
+      "Création de CV Facto, application Next.js/PostgreSQL générant des CV compatibles ATS à partir d’un profil structuré, avec export PDF optimisé",
       "Développement d’un plugin WordPress intégrant des blocs Gutenberg personnalisés en React/Tailwind pour améliorer la productivité éditoriale",
     ],
     stack: [
