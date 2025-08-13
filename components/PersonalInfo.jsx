@@ -126,7 +126,7 @@ export default function PersonalInfo() {
                       </a>
                       <div className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent hover:bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300">
                         <a
-                          href="/NgabonzizaAOlivier.pdf"
+                          href="/Aimé_Olivier_NGABONZIZA_Développeur_Full_Stack_Applications_Web_&_WordPress.pdf"
                           download
                           className="flex items-center p-2.5 group"
                         >
