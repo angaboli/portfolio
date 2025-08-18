@@ -32,6 +32,10 @@ body {
   font-size: 14px;
 }
 
+body::selection{
+  background-color: rgba(var(--secondary), 0.5);
+}
+
 .title {
   @apply font-medium text-2xl mb-2 drop-shadow-lg;
 }
