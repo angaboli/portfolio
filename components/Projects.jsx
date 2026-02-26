@@ -77,13 +77,6 @@ export default function Projects() {
                 rows: 2,
                 fill: "row",
               }}
-              /* coverflowEffect={{
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 3,
-                slideShadows: true,
-              }} */
               pagination={{
                 clickable: true,
               }}
@@ -101,8 +94,6 @@ export default function Projects() {
                       <Image
                         className="w-[380px] h-auto absolute backdrop-brightness-75 inset-0 object-cover object-center rounded-md"
                         src={elm.imgSrc}
-                        /* width={380}
-                        height={210} */
                         fill
                         alt={`portfolio ${elm.title}`}
                       />

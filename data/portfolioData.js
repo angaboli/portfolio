@@ -3,6 +3,57 @@ export const portfolioData = [
     id: 1,
     class: "isotop-item logo",
     bgClass: "bg-prink",
+    imgSrc: "/img/project/smartplate.jpg",
+    subtitle: "SmartPlate , Powered by AI",
+    title: "SmartPlate",
+    target: "#portfolio-1",
+    category: ["web app"],
+    project: "application web",
+    languages: [
+      "Next.js",
+      "React",
+      "Tailwind",
+      "Rest API",
+      "PosrtgreSQL",
+      "Prisma ORM",
+      "Git",
+      "Vercel Host",
+    ],
+    client: "Projet personnel",
+    previewLink: "https://smartplate.fr",
+    previewName: "SmartPlate",
+    desc: [
+      `SmartPlate est une application intelligente dédiée à la nutrition, conçue pour analyser les repas, suivre les habitudes alimentaires et proposer des améliorations personnalisées grâce à l’IA. L’application repose sur une architecture orientée données, capable de transformer des entrées simples (repas, habitudes, objectifs) en recommandations nutritionnelles claires, actionnables et évolutives, sans friction pour l’utilisateur.`,
+    ],
+  },
+  {
+    id: 2,
+    class: "isotop-item logo",
+    bgClass: "bg-prink",
+    imgSrc: "/img/project/mizi_studio.jpg",
+    subtitle: "Mizi Studio, Powered by AI",
+    title: "Mizi Studio",
+    target: "#portfolio-1",
+    category: ["web app"],
+    project: "application web",
+    languages: [
+      "Next.js",
+      "React",
+      "Tailwind",
+      "Git",
+      "Vercel Host",
+    ],
+    client: "Projet personnel",
+    previewLink: "https://studio.mizi.fr",
+    previewName: "Mizi Studio",
+    desc: [
+      `Mizi Studio est une plateforme créative pensée comme une vitrine technique et artistique, combinant performance web, design minimaliste et valorisation visuelle. Le projet met l’accent sur l’optimisation des médias (photo / vidéo), l’expérience utilisateur et une identité visuelle cohérente, pensée pour évoluer avec les besoins du studio.`,
+    ],
+  },
+  {
+    id: 3,
+    class: "isotop-item logo",
+    bgClass: "bg-prink",
     imgSrc: "/img/project/cvfacto.jpg",
     subtitle: "CV Facto , Creation de CV",
     title: "CV Facto",
@@ -19,14 +70,14 @@ export const portfolioData = [
       "Git",
     ],
     client: "Projet personnel",
-    previewLink: "https://cvfacto.mizi.fr",
+    previewLink: "https://cvfacto.com",
     previewName: "cvFacto",
     desc: [
-      `Développement d'une application web permettant de créer des CV optimisés pour les systèmes ATS. L'interface est conçue avec Next.js et Tailwind CSS, et les données sont gérées via PostgreSQL et Prisma ORM. L'application inclut une authentification sécurisée via GitHub, la génération de CV téléchargeables et un blog de conseils pour les chercheurs d'emploi.`,
+      `Une application orientée produit qui automatise la création, l’import et la structuration de CV. Elle s’appuie sur le traitement intelligent de données (PDF, parsing, normalisation) et sur l’IA pour personnaliser chaque CV en fonction du poste visé, en adaptant le contenu, la hiérarchisation des compétences et la présentation aux attentes spécifiques de chaque offre.`,
     ],
   },
   {
-    id: 2,
+    id: 4,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/anteno.jpg",
@@ -47,7 +98,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/utileo.jpg",
@@ -61,9 +112,9 @@ export const portfolioData = [
     previewLink: "https://utileo.eu",
     previewName: "utileo",
     desc: [
-      `Une plateforme e-commerce spécialisée dans la vente d'accessoires pour véhicules utilitaires. 
-      Développée avec Nuxt.js, l'application intègre une documentation technique détaillée 
-      et un système de recherche avancé pour aider les clients à trouver les accessoires 
+      `Une plateforme e-commerce spécialisée dans la vente d'accessoires pour véhicules utilitaires.
+      Développée avec Nuxt.js, l'application intègre une documentation technique détaillée
+      et un système de recherche avancé pour aider les clients à trouver les accessoires
       compatibles avec leurs véhicules.`,
     ],
   },
@@ -89,7 +140,7 @@ export const portfolioData = [
     ],
   }, */
   {
-    id: 4,
+    id: 6,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/consentio.jpg",
@@ -117,7 +168,7 @@ export const portfolioData = [
       tout en simplifiant la maintenance continue du projet.`,
     ],
   },
-  {
+  /* {
     id: 5,
     class: "isotop-item logo",
     bgClass: "bg-prink",
@@ -134,9 +185,9 @@ export const portfolioData = [
     desc: [
       `Développement d'un site web portfolio de photographie avec une galerie photo interactive.`,
     ],
-  },
+  }, */
   {
-    id: 6,
+    id: 7,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/portfolio.jpg",
@@ -164,7 +215,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/bellemme.jpg",
@@ -185,7 +236,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/shiva.jpg",
@@ -206,7 +257,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/pragmea.jpg",
@@ -224,7 +275,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/cocogo.jpg",

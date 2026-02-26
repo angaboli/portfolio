@@ -1,10 +1,13 @@
 export const resumeData = [
   {
     title: "Développeur full stack",
-    company: "Projet personnel",
+    company: "Freelance",
     date: "2025 - Présent",
     location: "Lille, France",
     description: [
+      "Collaboration avec les clients pour élaborer des solutions adaptées à leurs objectifs.",
+      "Gestion et suivi de projets web, depuis la définition des besoins jusqu'à la livraison.",
+      "Création d’applications web et de sites web sur mesure.",
       "Création de CV Facto, application Next.js/PostgreSQL générant des CV compatibles ATS à partir d’un profil structuré, avec export PDF optimisé",
       "Développement d’un plugin WordPress intégrant des blocs Gutenberg personnalisés en React/Tailwind pour améliorer la productivité éditoriale",
     ],
@@ -35,7 +38,7 @@ export const resumeData = [
     isActive: true,
     type: "work",
   },
-  {
+  /* {
     title: "Développeur full stack",
     company: "Freelance",
     date: "2024",
@@ -47,7 +50,7 @@ export const resumeData = [
     ],
     isActive: true,
     type: "work",
-  },
+  }, */
   {
     title: "Développeur web",
     company: "HD Communication",

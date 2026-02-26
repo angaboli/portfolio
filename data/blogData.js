@@ -1,5 +1,159 @@
 export const blogData = [
   {
+    id: "d57bc20c69dd5483b6781f13c3d4e501",
+    slug: "fin-developpeur-classique-big-tech",
+    title:
+      "La fin du développeur \"classique\" : ce que les ingénieurs des Big Tech savent déjà",
+    imageKey: "img/blog/classic-dev.jpg",
+    content: `
+Pendant longtemps, être développeur signifiait : écrire du code propre, maîtriser un framework, livrer des fonctionnalités.
+
+Mais cette définition appartient au passé.
+
+### Le changement n'est pas théorique
+
+Plusieurs ingénieurs seniors des grandes entreprises technologiques l'ont expliqué publiquement :
+
+#### Martin Fowler (ThoughtWorks)
+
+Dans ses écrits sur Continuous Delivery et Evolutionary Architecture, Fowler insiste sur le fait que :
+
+> La valeur d'un développeur ne réside pas dans la syntaxe, mais dans la capacité à concevoir des systèmes évolutifs.
+
+#### Werner Vogels (CTO Amazon)
+
+Son principe célèbre :
+
+> "You build it, you run it."
+
+Chez Amazon, un développeur est responsable : du code, du déploiement, de la surveillance, de la résilience.
+
+Ce n'est plus du simple développement. C'est de **l'ingénierie complète**.
+
+#### Netflix & la culture SRE
+
+Netflix a popularisé le concept de :
+- Chaos Engineering
+- Résilience distribuée
+- Observabilité avancée
+
+Le développeur moderne doit comprendre : la latence, la tolérance aux pannes, la scalabilité horizontale.
+
+#### Google – Site Reliability Engineering (SRE)
+
+Dans le livre *Site Reliability Engineering* (Google), les ingénieurs expliquent que :
+
+> Le développeur doit comprendre l'infrastructure comme un produit.
+
+On ne développe plus pour "un serveur". On développe pour **un système vivant**.
+
+### Le cloud a changé les règles
+
+**Avant :**
+- Serveur unique
+- Déploiement manuel
+- Architecture monolithique
+
+**Aujourd'hui :**
+- Microservices
+- Kubernetes
+- Infrastructure as Code
+- Multi-régions
+- IAM avancé
+
+Le développeur qui ignore le modèle de responsabilité partagée, la gestion des identités, le chiffrement et la haute disponibilité devient **vulnérable professionnellement**.
+
+### L'IA accélère l'obsolescence des profils limités
+
+Satya Nadella (Microsoft) l'a dit clairement :
+
+> "Every developer will become an AI developer."
+
+GitHub Copilot, ChatGPT, Gemini, Claude… Le code devient partiellement automatisé.
+
+Mais l'architecture ? La sécurité ? La stratégie technique ? **Pas encore.**
+
+Le développeur qui ne fait que coder sera remplacé. Celui qui orchestre **restera**.
+
+**Mots-clés** : développeur classique, Big Tech, cloud, IA, architecture logicielle, SRE, DevOps, ingénieur fullstack, évolution métier développeur
+  `,
+  },
+  {
+    id: "e68cd31d7aee6594c7892g24d4e5f602",
+    slug: "devcloudiasec-profil-hybride-emploi-demain",
+    title:
+      "DevCloudIAsec : le profil hybride qui sécurisera l'emploi de demain",
+    imageKey: "img/blog/devsecopscloud.jpg",
+    content: `
+Si le développeur "classique" disparaît, quel profil émerge ? Un **ingénieur hybride**.
+
+Je l'appelle : **DevCloudIAsec**
+
+Un profil capable de combiner : développement logiciel, cloud computing, sécurité applicative, intelligence artificielle et vision architecture.
+
+### Sécurité intégrée dès la conception
+
+Le mouvement DevSecOps, promu par OWASP et le NIST, impose :
+- Sécurité by design
+- Analyse de vulnérabilités continue
+- Tests automatisés
+- Gestion des secrets
+- Zero Trust
+
+La sécurité n'est plus un audit final. **Elle fait partie du code.**
+
+### Architecture avant framework
+
+Les ingénieurs expérimentés des GAFAM le répètent :
+
+> Les frameworks changent. Les principes restent.
+
+Un développeur moderne doit maîtriser :
+- **SOLID**
+- **Clean Architecture**
+- **DDD** (Eric Evans)
+- **Design Patterns** (GoF)
+- **Scalabilité horizontale**
+
+Ces compétences étaient autrefois attendues après 10 ans d'expérience. Aujourd'hui, elles sont nécessaires **beaucoup plus tôt**.
+
+### Cloud-native mindset
+
+Selon la CNCF (Cloud Native Computing Foundation), le futur est : conteneurisé, orchestré, distribué, observé.
+
+Le développeur de demain doit comprendre :
+- Docker
+- Kubernetes
+- CI/CD
+- Infrastructure as Code
+- Monitoring
+
+### IA comme copilote stratégique
+
+L'IA ne remplace pas l'ingénieur. Elle **augmente** celui qui comprend le système global.
+
+Les meilleurs développeurs utiliseront l'IA pour :
+- Accélérer le prototypage
+- Générer des tests
+- Analyser des vulnérabilités
+- Optimiser des architectures
+
+Mais l'intelligence humaine restera responsable des **décisions critiques**.
+
+### Conclusion
+
+Le métier n'est pas mort. Il a **évolué**.
+
+Le futur appartient à ceux qui combinent : **Code + Cloud + Sécurité + IA + Architecture**.
+
+Ce n'est plus une spécialisation. C'est une **transformation**.
+
+Et ceux qui s'adapteront dès maintenant ne subiront pas le marché. **Ils le domineront.**
+
+**Mots-clés** : DevCloudIAsec, profil hybride, DevSecOps, cloud-native, IA développeur, architecture logicielle, Kubernetes, SOLID, Clean Architecture, emploi développeur 2025
+  `,
+  },
+  {
     id: "f47ac10b58cc4372a5670e02b2c3d479",
     slug: "cv-compatible-ats-recruteurs",
     title:
