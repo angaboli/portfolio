@@ -5,19 +5,23 @@ import { GrContact } from "react-icons/gr";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const navItems = [
-  { id: "home", icon: RiHome6Line, label: "Accueil" },
-  { id: "skills", icon: RiToolsLine, label: "Compétences" },
-  { id: "resume", icon: IoBriefcaseOutline, label: "Expériences" },
-  { id: "projects", icon: RiFolder2Line, label: "Projets" },
-  { id: "contact", icon: GrContact, label: "Contact" },
-];
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/locales/translations";
 
 export default function NavBar() {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   const isBlog = pathname.startsWith("/blog");
+  const { lang } = useLanguage();
+  const t = translations[lang].nav;
+
+  const navItems = [
+    { id: "home", icon: RiHome6Line, label: t.home },
+    { id: "skills", icon: RiToolsLine, label: t.skills },
+    { id: "resume", icon: IoBriefcaseOutline, label: t.resume },
+    { id: "projects", icon: RiFolder2Line, label: t.projects },
+    { id: "contact", icon: GrContact, label: t.contact },
+  ];
 
   return (
     <nav className="fixed w-80 mx-auto inset-x-0 bottom-5 z-50 rounded-2xl p-2.5 bg-bkgEnd/80 backdrop-blur-lg shadow-xl">
@@ -50,7 +54,7 @@ export default function NavBar() {
           </li>
         ))}
         <li className={`rounded-xl cursor-pointer hover:scale-150 transition-all duration-500 ease-in-out ${isBlog ? "bg-bkgStart text-accent" : ""}`}>
-          <Link href="/blog" className="flex items-center justify-center w-8 h-8" aria-label="Blog">
+          <Link href="/blog" className="flex items-center justify-center w-8 h-8" aria-label={t.blog}>
             <IoNewspaperOutline className="w-8 h-8 p-2" />
           </Link>
         </li>

@@ -1,14 +1,13 @@
-import { FaPhp } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+'use client';
 import { skillsData } from "@/data/skillsData";
-import { SiWordpress } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
-import { GrProjects } from "react-icons/gr";
-import { FaCode } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/locales/translations";
 
 export default function Skills() {
+  const { lang } = useLanguage();
+  const t = translations[lang];
+
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -35,9 +34,7 @@ export default function Skills() {
         <div className="flex flex-wrap">
           <div className="w-full">
             <div className="mb-10 text-center">
-              <h2 className="title">
-                Domaines d'expertise{/* Areas of Expertise */}
-              </h2>
+              <h2 className="title">{t.skills.title}</h2>
             </div>
           </div>
         </div>
@@ -54,14 +51,6 @@ export default function Skills() {
               </div>
             </motion.div>
           ))}
-          {/* <div className="bg-accent/30 text-secondary p-2.5 rounded-md justify-center text-center">
-          <FaPhp className="w-20 h-20" />
-          <div className="small">PHP</div>
-      </div>
-        <div className="bg-accent/30 text-secondary p-2.5 rounded-md justify-center text-center">
-          <IoLogoJavascript className="w-20 h-20" />
-          <div className="small">JS</div>
-      </div> */}
         </motion.div>
       </div>
     </section>

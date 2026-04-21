@@ -4,11 +4,15 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FiSend } from "react-icons/fi";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/locales/translations";
 
 export default function ContactForm() {
-  const [activeInputBoxes, setActiveInputBoxes] = useState([])
+  const [activeInputBoxes, setActiveInputBoxes] = useState([]);
   const form = useRef();
   const [isMounted, setIsMounted] = useState(false);
+  const { lang } = useLanguage();
+  const t = translations[lang].form;
 
   useEffect(() => {
     setIsMounted(true);
@@ -30,11 +34,11 @@ export default function ContactForm() {
       .then(
         (result) => {
           console.log(result);
-          toast.success("Message Sent successfully!");
+          toast.success(t.successMsg);
           document.getElementById("contactForm").reset();
         },
         (error) => {
-          toast.error("Ops Message not Sent!");
+          toast.error(t.errorMsg);
         }
       );
   };
@@ -51,7 +55,7 @@ export default function ContactForm() {
         <label htmlFor="user_name"
           className={`input-label block mb-2 ${activeInputBoxes.includes('name') ? 'text-secondary' : ''}`}
         >
-          Nom complet *
+          {t.name}
         </label>
         <input
           id="user_name"
@@ -66,7 +70,7 @@ export default function ContactForm() {
         <label htmlFor="user_email"
           className={`input-label block mb-2 ${activeInputBoxes.includes('gmail') ? 'text-secondary' : ''}`}
         >
-          Email *
+          {t.email}
         </label>
         <input
           id="user_email"
@@ -81,7 +85,7 @@ export default function ContactForm() {
         <label htmlFor="message"
           className={`input-label block mb-2 ${activeInputBoxes.includes('message') ? 'text-secondary' : ''}`}
         >
-          Message *
+          {t.message}
         </label>
         <textarea
           name="message"
@@ -98,10 +102,10 @@ export default function ContactForm() {
           value="Send"
           className="form-btn bg-neutral flex gap-2 items-center  text-primary border-1 border-accent shadow hover:shadow-md hover:from-accent bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out py-2 px-4 rounded-xl transition duration-200 transform hover:-translate-y-1 active:translate-y-0"
         >
-          Envoyer
+          {t.send}
           <FiSend className="" />
         </button>
       </div>
     </form>
-  )
+  );
 }

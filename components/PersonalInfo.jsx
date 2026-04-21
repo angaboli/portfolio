@@ -1,8 +1,8 @@
+'use client';
 import { useState, useEffect } from "react";
 import { contactData } from "@/data/contactData";
 import Image from "next/image";
 import { profileInfo } from "@/data/profileInfo";
-import { bioData } from "@/data/bioData";
 import { socialMediaData } from "@/data/socials";
 import { IoCalendar, IoPhonePortraitOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
@@ -13,14 +13,29 @@ import { FaInstagram } from "react-icons/fa";
 import { IoDownloadOutline } from "react-icons/io5";
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/locales/translations";
 
 export default function PersonalInfo() {
   const [showTypingText, setShowTypingText] = useState(true);
+  const { lang } = useLanguage();
+  const t = translations[lang];
 
   useEffect(() => {
     const timeout = setTimeout(() => setShowTypingText(false), 2000);
     return () => clearTimeout(timeout);
   }, []);
+
+  const contactLabels = {
+    emailLabel: t.contact.emailLabel,
+    locationLabel: t.contact.locationLabel,
+  };
+
+  const getLabel = (iconClass) => {
+    if (iconClass === "mail") return contactLabels.emailLabel;
+    if (iconClass === "location") return contactLabels.locationLabel;
+    return "";
+  };
 
   const chooseIcon = (iconInput) => {
     switch (iconInput) {
@@ -47,7 +62,7 @@ export default function PersonalInfo() {
         <div className="flex flex-wrap">
           <div className="w-full">
             <div className="mb-10 text-center">
-              <h2 className="title">Développeur Web Fullstack – L’expérience utilisateur au service de la performance.</h2>
+              <h2 className="title">{t.personalInfo.title}</h2>
             </div>
           </div>
         </div>
@@ -71,14 +86,11 @@ export default function PersonalInfo() {
                   initial="hidden"
                   animate="visible"
                 >
-                  Salut, je suis&nbsp;{" "}
+                  {t.personalInfo.greeting}&nbsp;{" "}
                   <AnimatedTextCharacter text="NGABONZIZA Aimé Olivier" />
                 </h3>
                 <p className="mb-4 break-words whitespace-normal">
-                  {bioData.descOne}
-                </p>
-                <p className="mb-4 break-words whitespace-normal">
-                  {bioData?.descTwo}
+                  {t.bio.descOne}
                 </p>
                 <div className="bostami-personal-info-contact">
                   <div className="flex flex-wrap mb-4">
@@ -88,13 +100,13 @@ export default function PersonalInfo() {
                           href={elm.text.href}
                           target="_blank"
                           className="flex items-center py-2.5 gap-2"
-                          aria-label={elm.text.label}
+                          aria-label={getLabel(elm.iconClass)}
                         >
-                          <button className="text-xl text-secondary bg-neutral rounded-lg shadow flex p-2.5 gap-5 text-center transition duration-300" aria-label={elm.text.label}>
+                          <button className="text-xl text-secondary bg-neutral rounded-lg shadow flex p-2.5 gap-5 text-center transition duration-300" aria-label={getLabel(elm.iconClass)}>
                             {chooseIcon(elm.iconClass)}
                           </button>
                           <div className="text">
-                            <span className="small">{elm.text.label}</span>
+                            <span className="small">{getLabel(elm.iconClass)}</span>
                             <p>{elm.text.value}</p>
                           </div>
                         </a>
@@ -122,7 +134,7 @@ export default function PersonalInfo() {
                         rel="noopener noreferrer"
                       >
                         <IoCalendar className="text-secondary group-hover:text-neutral w-4 h-4 mr-2" />
-                        <span className="group-hover:text-neutral group-hover:from-accent group-hover:to-secondary">Reservez un RDV</span>
+                        <span className="group-hover:text-neutral group-hover:from-accent group-hover:to-secondary">{t.personalInfo.bookMeeting}</span>
                       </a>
                       <div className="rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent hover:bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300">
                         <a
@@ -131,7 +143,7 @@ export default function PersonalInfo() {
                           className="flex items-center p-2.5 group"
                         >
                           <IoDownloadOutline className="text-secondary group-hover:text-neutral w-4 h-4 mr-2" />
-                          <span className="group-hover:text-neutral group-hover:from-accent group-hover:to-secondary">Télécharger mon CV</span>
+                          <span className="group-hover:text-neutral group-hover:from-accent group-hover:to-secondary">{t.personalInfo.downloadCV}</span>
                         </a>
                       </div>
                     </div>
