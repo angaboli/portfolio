@@ -1,11 +1,31 @@
 'use client';
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 const LanguageContext = createContext();
 
+function detectDefaultLang() {
+  if (typeof window === 'undefined') return 'fr';
+  const saved = localStorage.getItem('lang');
+  if (saved === 'fr' || saved === 'en') return saved;
+  const browser = navigator.language || navigator.languages?.[0] || 'fr';
+  return browser.toLowerCase().startsWith('fr') ? 'fr' : 'en';
+}
+
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState('fr');
-  const toggle = () => setLang((l) => (l === 'fr' ? 'en' : 'fr'));
+
+  useEffect(() => {
+    setLang(detectDefaultLang());
+  }, []);
+
+  const toggle = () => {
+    setLang((l) => {
+      const next = l === 'fr' ? 'en' : 'fr';
+      localStorage.setItem('lang', next);
+      return next;
+    });
+  };
+
   return (
     <LanguageContext.Provider value={{ lang, toggle }}>
       {children}
