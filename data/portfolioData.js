@@ -3,7 +3,7 @@ export const portfolioData = [
     id: 1,
     class: "isotop-item logo",
     bgClass: "bg-prink",
-    imgSrc: "/img/project/activitesboutcou.jpg",
+    imgSrc: "/img/project/activitesboutchou.jpg",
     subtitle: "Activités Bout'chou , Ateliers enfants",
     title: "Activités Bout'chou",
     target: "#portfolio-1",
