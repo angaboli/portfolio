@@ -3,6 +3,32 @@ export const portfolioData = [
     id: 1,
     class: "isotop-item logo",
     bgClass: "bg-prink",
+    imgSrc: "/img/project/activitesboutcou.jpg",
+    subtitle: "Activités Bout'chou , Ateliers enfants",
+    title: "Activités Bout'chou",
+    target: "#portfolio-1",
+    category: ["web app"],
+    project: "application web",
+    languages: [
+      "Next.js",
+      "React",
+      "Tailwind",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Git",
+      "Vercel Host",
+    ],
+    client: "Activités Bout'chou",
+    previewLink: "https://activites-boutchou.com",
+    previewName: "activites-boutchou.com",
+    desc: [
+      `Un univers de découvertes pensé pour les tout-petits : ateliers sensoriels, créatifs et musicaux réunis dans une plateforme complète. L'application intègre un back-office sur mesure permettant au client de gérer ses ateliers, les inscriptions des parents et les réservations en toute autonomie, avec une expérience utilisateur adaptée au monde de l'enfance.`,
+    ],
+  },
+  {
+    id: 2,
+    class: "isotop-item logo",
+    bgClass: "bg-prink",
     imgSrc: "/img/project/smartplate.jpg",
     subtitle: "SmartPlate , Powered by AI",
     title: "SmartPlate",
@@ -23,11 +49,11 @@ export const portfolioData = [
     previewLink: "https://smartplate.fr",
     previewName: "SmartPlate",
     desc: [
-      `SmartPlate est une application intelligente dédiée à la nutrition, conçue pour analyser les repas, suivre les habitudes alimentaires et proposer des améliorations personnalisées grâce à l’IA. L’application repose sur une architecture orientée données, capable de transformer des entrées simples (repas, habitudes, objectifs) en recommandations nutritionnelles claires, actionnables et évolutives, sans friction pour l’utilisateur.`,
+      `SmartPlate est une application intelligente dédiée à la nutrition, conçue pour analyser les repas, suivre les habitudes alimentaires et proposer des améliorations personnalisées grâce à l'IA. L'application repose sur une architecture orientée données, capable de transformer des entrées simples (repas, habitudes, objectifs) en recommandations nutritionnelles claires, actionnables et évolutives, sans friction pour l'utilisateur.`,
     ],
   },
   {
-    id: 2,
+    id: 3,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/mizi_studio.jpg",
@@ -47,11 +73,11 @@ export const portfolioData = [
     previewLink: "https://studio.mizi.fr",
     previewName: "Mizi Studio",
     desc: [
-      `Mizi Studio est une plateforme créative pensée comme une vitrine technique et artistique, combinant performance web, design minimaliste et valorisation visuelle. Le projet met l’accent sur l’optimisation des médias (photo / vidéo), l’expérience utilisateur et une identité visuelle cohérente, pensée pour évoluer avec les besoins du studio.`,
+      `Mizi Studio est une plateforme créative pensée comme une vitrine technique et artistique, combinant performance web, design minimaliste et valorisation visuelle. Le projet met l'accent sur l'optimisation des médias (photo / vidéo), l'expérience utilisateur et une identité visuelle cohérente, pensée pour évoluer avec les besoins du studio.`,
     ],
   },
   {
-    id: 3,
+    id: 4,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/cvfacto.jpg",
@@ -73,11 +99,11 @@ export const portfolioData = [
     previewLink: "https://cvfacto.com",
     previewName: "cvFacto",
     desc: [
-      `Une application orientée produit qui automatise la création, l’import et la structuration de CV. Elle s’appuie sur le traitement intelligent de données (PDF, parsing, normalisation) et sur l’IA pour personnaliser chaque CV en fonction du poste visé, en adaptant le contenu, la hiérarchisation des compétences et la présentation aux attentes spécifiques de chaque offre.`,
+      `Une application orientée produit qui automatise la création, l'import et la structuration de CV. Elle s'appuie sur le traitement intelligent de données (PDF, parsing, normalisation) et sur l'IA pour personnaliser chaque CV en fonction du poste visé, en adaptant le contenu, la hiérarchisation des compétences et la présentation aux attentes spécifiques de chaque offre.`,
     ],
   },
   {
-    id: 4,
+    id: 5,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/anteno.jpg",
@@ -91,14 +117,14 @@ export const portfolioData = [
     previewLink: "https://anteno.fr",
     previewName: "anteno.fr",
     desc: [
-      `Une application web dédiée au tourisme patrimonial français, permettant aux utilisateurs 
-      de découvrir et d'explorer le riche patrimoine culturel de la France. 
-      Développée avec Nuxt.js et Tailwind CSS, l'application offre une expérience utilisateur 
+      `Une application web dédiée au tourisme patrimonial français, permettant aux utilisateurs
+      de découvrir et d'explorer le riche patrimoine culturel de la France.
+      Développée avec Nuxt.js et Tailwind CSS, l'application offre une expérience utilisateur
       fluide et moderne pour la découverte des sites historiques et culturels.`,
     ],
   },
   {
-    id: 5,
+    id: 6,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/utileo.jpg",
@@ -133,14 +159,14 @@ export const portfolioData = [
     previewLink: "https://utileo.eu",
     previewName: "utileo",
     desc: [
-      `Une plateforme e-commerce spécialisée dans la vente d'accessoires pour véhicules utilitaires. 
-      Développée avec Nuxt.js, l'application intègre une documentation technique détaillée 
-      et un système de recherche avancé pour aider les clients à trouver les accessoires 
+      `Une plateforme e-commerce spécialisée dans la vente d'accessoires pour véhicules utilitaires.
+      Développée avec Nuxt.js, l'application intègre une documentation technique détaillée
+      et un système de recherche avancé pour aider les clients à trouver les accessoires
       compatibles avec leurs véhicules.`,
     ],
   }, */
   {
-    id: 6,
+    id: 7,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/consentio.jpg",
@@ -162,9 +188,9 @@ export const portfolioData = [
     previewLink: "https://consentio.cloud",
     previewName: "Consentio",
     desc: [
-      `Soutien à la gestion de projet pour une application web axée sur la gestion de la conformité et la protection des données. 
-      J'ai supervisé le projet, assurant la création et la mise en place d'outils de versionnage et de Dockerisation pour garantir 
-      la maintenabilité et la robustesse du code. Ces efforts ont permis un contrôle efficace des versions et une sécurité accrue des données, 
+      `Soutien à la gestion de projet pour une application web axée sur la gestion de la conformité et la protection des données.
+      J'ai supervisé le projet, assurant la création et la mise en place d'outils de versionnage et de Dockerisation pour garantir
+      la maintenabilité et la robustesse du code. Ces efforts ont permis un contrôle efficace des versions et une sécurité accrue des données,
       tout en simplifiant la maintenance continue du projet.`,
     ],
   },
@@ -187,7 +213,7 @@ export const portfolioData = [
     ],
   }, */
   {
-    id: 7,
+    id: 8,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/portfolio.jpg",
@@ -209,13 +235,13 @@ export const portfolioData = [
     previewLink: "/#",
     previewName: "Ngabonziza",
     desc: [
-      `Un site web portfolio professionnel conçu pour mettre en valeur mes compétences, 
-      projets et réalisations. Ce site présente un design moderne et responsive, 
+      `Un site web portfolio professionnel conçu pour mettre en valeur mes compétences,
+      projets et réalisations. Ce site présente un design moderne et responsive,
       offrant une navigation fluide et une expérience utilisateur optimale.`,
     ],
   },
   {
-    id: 8,
+    id: 9,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/bellemme.jpg",
@@ -229,14 +255,14 @@ export const portfolioData = [
     previewLink: "https://www.bellemme.com/",
     previewName: "Bellemme",
     desc: [
-      `Création d'une plateforme e-commerce avec WooCommerce, 
-      intégrant un processus de paiement personnalisé et des comptes clients sur mesure. 
-      Développement d'un module Elementor personnalisé avec des widgets réutilisables pour une intégration frontale harmonieuse. 
+      `Création d'une plateforme e-commerce avec WooCommerce,
+      intégrant un processus de paiement personnalisé et des comptes clients sur mesure.
+      Développement d'un module Elementor personnalisé avec des widgets réutilisables pour une intégration frontale harmonieuse.
       Mise en place d'un module de cartes cadeaux et d'outils administratifs avancés pour la gestion du site.`,
     ],
   },
   {
-    id: 9,
+    id: 10,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/shiva.jpg",
@@ -250,14 +276,14 @@ export const portfolioData = [
     previewLink: "https://shiva.fr",
     previewName: "shiva.fr",
     desc: [
-      `Un site web de services de ménage à domicile avec des fonctionnalités 
-      de gestion de contenu développées en PHP natif et WordPress. 
-      Exécution d'appels API et synchronisation avec l'application pour une gestion fluide. 
+      `Un site web de services de ménage à domicile avec des fonctionnalités
+      de gestion de contenu développées en PHP natif et WordPress.
+      Exécution d'appels API et synchronisation avec l'application pour une gestion fluide.
       Création de plugins Gutenberg personnalisés utilisant React pour améliorer l'interactivité et l'intégration.`,
     ],
   },
   {
-    id: 10,
+    id: 11,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/pragmea.jpg",
@@ -275,7 +301,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     class: "isotop-item logo",
     bgClass: "bg-prink",
     imgSrc: "/img/project/cocogo.jpg",
@@ -299,11 +325,11 @@ export const portfolioData = [
     previewLink: "https://cocogo.ci",
     previewName: "cocogo.ci",
     desc: [
-      `Une application de réservation de voitures disposant d'un back-office WordPress headless 
-      pour la gestion et d'un frontend moderne développé avec Next.js. 
-      Ce projet assure une gestion fluide des réservations et une expérience 
+      `Une application de réservation de voitures disposant d'un back-office WordPress headless
+      pour la gestion et d'un frontend moderne développé avec Next.js.
+      Ce projet assure une gestion fluide des réservations et une expérience
       utilisateur optimisée grâce à des technologies de pointe.`,
     ],
   },
- 
+
 ];

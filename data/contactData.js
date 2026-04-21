@@ -4,8 +4,8 @@ export const contactData = [
     iconClass: "mail",
     text: {
       label: "Email",
-      value: "angaboli@gmail.com",
-      href: "mailto:angaboli@gmail.com",
+      value: "aime@ngabonziza.com",
+      href: "mailto:aime@ngabonziza.com",
     },
   },
   {

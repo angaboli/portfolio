@@ -117,7 +117,7 @@ export default function PersonalInfo() {
                     <div className="flex flex-col lg:flex-row gap-3 w-full max-w-fit md:w-1/2 ">
                       <a
                         className="group rounded-lg bg-neutral text-primary shadow hover:shadow-md hover:from-accent hover:bg-gradient-to-r hover:text-neutral hover:to-secondary ease-in-out duration-300 flex items-center p-2.5"
-                        href="https://calendar.app.google/Ttdra3QBBqRRXVxp8"
+                        href="https://calendly.com/aime-ngabonziza/30min"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
