@@ -114,4 +114,9 @@ export const skillsData = [
     icon: '',
     label: "Adobe(Ps, Ai, Lr, Pr, xD)",
   },
+  {
+    id: 24,
+    icon: '',
+    label: "Intégration IA",
+  },
 ];
