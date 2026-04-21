@@ -22,7 +22,7 @@ export const portfolioData = [
     previewLink: "https://activites-boutchou.com",
     previewName: "activites-boutchou.com",
     desc: [
-      `Un univers de découvertes pensé pour les tout-petits : ateliers sensoriels, créatifs et musicaux réunis dans une plateforme complète. L'application intègre un back-office sur mesure permettant au client de gérer ses ateliers, les inscriptions des parents et les réservations en toute autonomie, avec une expérience utilisateur adaptée au monde de l'enfance.`,
+      `Un univers de découvertes pensé pour les tout-petits : ateliers sensoriels, créatifs et musicaux réunis dans une plateforme complète. L'application intègre un back-office sur mesure permettant au client de gérer les ateliers, les inscriptions des parents et les réservations en toute autonomie, avec une expérience utilisateur adaptée au monde de l'enfance.`,
     ],
   },
   {
