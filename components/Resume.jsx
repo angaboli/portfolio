@@ -34,6 +34,7 @@ export default function Resume() {
             {resumeData.map((item, index) => {
               const translated = t.resume.items[index];
               const descriptions = translated ? translated.description : item.description;
+              const jobTitle = translated?.title || item.title;
               return (
                 <div className={`mt-6 md:mt-0 md:mb-12`} key={index}>
                   <div className="flex flex-col md:flex-row items-center">
@@ -53,7 +54,7 @@ export default function Resume() {
                         className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}
                       >
                         <div className="p-4 origin-center bg-bkgStart rounded-md shadow-md">
-                          <h3 className="font-semibold text-secondary text-md mb-1">{item.title} - {item.company}</h3>
+                          <h3 className="font-semibold text-secondary text-md mb-1">{jobTitle} - {item.company}</h3>
                           <div className='flex justify-between'>
                             <span className='text-xs font-light'>{item.location}</span>
                             <time className="text-xs font-light text-primary">{item.date}</time>

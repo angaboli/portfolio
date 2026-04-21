@@ -33,6 +33,7 @@ Rigueur, autonomie et vision produit au service de solutions fiables, évolutive
       title: "Mon parcours professionnel",
       items: [
         {
+          title: "Développeur full stack",
           description: [
             "Collaboration avec les clients pour élaborer des solutions adaptées à leurs objectifs.",
             "Gestion et suivi de projets web, depuis la définition des besoins jusqu'à la livraison.",
@@ -42,6 +43,7 @@ Rigueur, autonomie et vision produit au service de solutions fiables, évolutive
           ],
         },
         {
+          title: "Développeur full stack",
           description: [
             "Analyse des besoins clients et rédaction de spécifications techniques.",
             "Conception, développement et tests de programmes et applications.",
@@ -50,6 +52,7 @@ Rigueur, autonomie et vision produit au service de solutions fiables, évolutive
           ],
         },
         {
+          title: "Développeur web",
           description: [
             "Développement des sites et applications web.",
             "Collaborer avec des équipes interfonctionnelles pour recueillir les exigences.",
@@ -62,6 +65,7 @@ Rigueur, autonomie et vision produit au service de solutions fiables, évolutive
           ],
         },
         {
+          title: "Développeur web",
           description: [
             "Développement des sites web et maintenance.",
             "Déploiement et mise en ligne, gestion des hébergements.",
@@ -69,16 +73,18 @@ Rigueur, autonomie et vision produit au service de solutions fiables, évolutive
             "Développement des fonctionnalités.",
           ],
         },
-        { description: [""] },
+        { title: "Licence Informatique", description: [""] },
         {
+          title: "Développeur web",
           description: [
             "Analyse du besoin et correction des anomalies.",
             "Mise en place de bases de données.",
             "Développement des fonctionnalités.",
           ],
         },
-        { description: [""] },
+        { title: "Licence d'éducation Informatique", description: [""] },
         {
+          title: "Enseignant (Réseaux et Web)",
           description: [
             "Préparation du cours et support.",
             "Préparation des exercices.",
@@ -87,6 +93,7 @@ Rigueur, autonomie et vision produit au service de solutions fiables, évolutive
           ],
         },
         {
+          title: "Technicien support informatique",
           description: [
             "Mise à jour des applications.",
             "Maintenance informatique.",
@@ -166,6 +173,7 @@ Rigor, autonomy and product vision in service of reliable, scalable solutions al
       title: "My Professional Journey",
       items: [
         {
+          title: "Full Stack Developer",
           description: [
             "Client collaboration to develop solutions aligned with their goals.",
             "Project management from requirements definition to delivery.",
@@ -175,6 +183,7 @@ Rigor, autonomy and product vision in service of reliable, scalable solutions al
           ],
         },
         {
+          title: "Full Stack Developer",
           description: [
             "Client needs analysis and technical specification writing.",
             "Design, development and testing of programs and applications.",
@@ -183,6 +192,7 @@ Rigor, autonomy and product vision in service of reliable, scalable solutions al
           ],
         },
         {
+          title: "Web Developer",
           description: [
             "Web development for sites and applications.",
             "Collaborating with cross-functional teams to gather requirements.",
@@ -195,6 +205,7 @@ Rigor, autonomy and product vision in service of reliable, scalable solutions al
           ],
         },
         {
+          title: "Web Developer",
           description: [
             "Web development and maintenance.",
             "Deployment and go-live, hosting management.",
@@ -202,16 +213,18 @@ Rigor, autonomy and product vision in service of reliable, scalable solutions al
             "Feature development.",
           ],
         },
-        { description: [""] },
+        { title: "Bachelor's in Computer Science", description: [""] },
         {
+          title: "Web Developer",
           description: [
             "Needs analysis and bug fixing.",
             "Database setup.",
             "Feature development.",
           ],
         },
-        { description: [""] },
+        { title: "Bachelor's in IT Education", description: [""] },
         {
+          title: "Teacher (Networks & Web)",
           description: [
             "Lesson preparation and support materials.",
             "Exercise preparation.",
@@ -220,6 +233,7 @@ Rigor, autonomy and product vision in service of reliable, scalable solutions al
           ],
         },
         {
+          title: "IT Support Technician",
           description: [
             "Application updates.",
             "IT maintenance.",
