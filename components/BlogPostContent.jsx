@@ -6,8 +6,13 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import * as framerMotion from 'framer-motion';
 const { motion } = framerMotion;
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function BlogPostContent({ post }) {
+  const { lang } = useLanguage();
+  const title = lang === 'en' && post.titleEn ? post.titleEn : post.title;
+  const content = lang === 'en' && post.contentEn ? post.contentEn : post.content;
+
   return (
     <div className="bg-bkgStart py-8 px-10 rounded-2xl">
       {post.imageKey && (
@@ -20,14 +25,14 @@ export default function BlogPostContent({ post }) {
             >
               <Image
                 src={`/${post.imageKey}`}
-                alt={post.title}
+                alt={title}
                 width={800}
                 height={400}
                 className="w-full aspect-video object-cover"
               />
             </motion.div>
           </div>
-          <h1 className="text-3xl font-bold my-6">{post.title}</h1>
+          <h1 className="text-3xl font-bold my-6">{title}</h1>
         </div>
       )}
       <article className="prose prose-neutral prose-lg max-w-none">
@@ -121,7 +126,7 @@ export default function BlogPostContent({ post }) {
             ),
           }}
         >
-          {post.content}
+          {content}
         </ReactMarkdown>
       </article>
     </div>
