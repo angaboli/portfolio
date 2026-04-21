@@ -19,11 +19,9 @@ export function LanguageProvider({ children }) {
   }, []);
 
   const toggle = () => {
-    setLang((l) => {
-      const next = l === 'fr' ? 'en' : 'fr';
-      localStorage.setItem('lang', next);
-      return next;
-    });
+    const next = lang === 'fr' ? 'en' : 'fr';
+    localStorage.setItem('lang', next);
+    setLang(next);
   };
 
   return (
